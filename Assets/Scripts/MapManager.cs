@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MapManager : MonoBehaviour {
+public class MapManager : MonoBehaviour
+{
     public List<List<GameObject>> spotTable = new List<List<GameObject>>();
 
     public void ButtonTest()

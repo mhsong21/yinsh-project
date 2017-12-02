@@ -10,7 +10,6 @@ public class MapEditor : EditorWindow
     private List<int> topOffsetList = new List<int>(){6, 4, 3, 2, 1, 1, 0, 0, 0, 0, 1};
     private List<int> bottomOffsetList = new List<int>(){1, 0, 0, 0, 0, 1, 1, 2, 3, 4, 6};
 	private float buttonMargin;
-    private float angle = 60f;
 
     private Vector2 scrollPosition;
 
@@ -56,6 +55,8 @@ public class MapEditor : EditorWindow
                 button.name = "Button_" + (char)((char)'a' + colIndex) + "_" + (rowIndex + 1);
                 button.transform.SetParent(go.transform, false);
                 button.transform.localPosition = CalcButtonPosition(colIndex, rowIndex);
+                button.AddComponent<Cell>();
+                button.GetComponent<Cell>().Initialize(colIndex, rowIndex);
                 buttonList.Add(button);
             }
             target.spotTable.Add(buttonList);
