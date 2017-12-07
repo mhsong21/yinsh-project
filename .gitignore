@@ -34,3 +34,5 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
+# OS generate file
+.DS_Store
