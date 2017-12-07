@@ -12,7 +12,7 @@ public class MapManager : MonoBehaviour
         {
             for (int j = 0; j < spotTable[i].Count; j++)
             {
-                Debug.Log(spotTable[i][j].name);
+                Debug.Log(spotTable[i][j].name + "(" + i + ", " + j + ")");
             }
         }
     }

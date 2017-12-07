@@ -55,8 +55,6 @@ public class MapEditor : EditorWindow
                 button.name = "Button_" + (char)((char)'a' + colIndex) + "_" + (rowIndex + 1);
                 button.transform.SetParent(go.transform, false);
                 button.transform.localPosition = CalcButtonPosition(colIndex, rowIndex);
-                button.AddComponent<Cell>();
-                button.GetComponent<Cell>().Initialize(colIndex, rowIndex);
                 buttonList.Add(button);
             }
             target.spotTable.Add(buttonList);
