@@ -57,7 +57,8 @@ public class MapEditor : EditorWindow
                 button.transform.localPosition = CalcButtonPosition(colIndex, rowIndex);
                 buttonList.Add(button);
             }
-            target.spotTable.Add(buttonList);
+//            target.spotTable.Add(buttonList);
+//			target.spotTable.Add(ListableClass(
         }
     }
 
