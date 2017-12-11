@@ -6,11 +6,11 @@ public class CameraController : MonoBehaviour {
     public GameObject Camera;
     public float animationTime = 1.5f;
 
-    private Vector3 basePos = new Vector3(20f, 5f, 0f);
-    private Vector3 playPos = new Vector3(0f, 5f, 0f);
+    public Vector3 basePos = new Vector3(20f, 5f, 0f);
+    public Vector3 playPos = new Vector3(0f, 5f, 0f);
     private bool onPlay = false;
 
-    public void OnReset()
+    public void Awake()
     {
         Camera.transform.position = basePos;
     }

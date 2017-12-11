@@ -33,8 +33,6 @@ public class MapEditor : EditorWindow
 
             if (GUILayout.Button("Build"))
                 Build();
-            if (GUILayout.Button("Build Test"))
-                target.ButtonTest();
         }
     }
 
@@ -48,17 +46,16 @@ public class MapEditor : EditorWindow
 
             int bottomOffset = bottomOffsetList[colIndex];
             int topOffset = topOffsetList[colIndex];
-            List<GameObject> buttonList = new List<GameObject>();
+            SerializableGameObjectList buttonList = new SerializableGameObjectList();
             for (int rowIndex = bottomOffset; rowIndex < totalSpot - topOffset; ++rowIndex)
             {
                 var button = Instantiate(buttonPrefab) as GameObject;
                 button.name = "Button_" + (char)((char)'a' + colIndex) + "_" + (rowIndex + 1);
                 button.transform.SetParent(go.transform, false);
                 button.transform.localPosition = CalcButtonPosition(colIndex, rowIndex);
-                buttonList.Add(button);
+                buttonList.rawData.Add(button);
             }
-//            target.spotTable.Add(buttonList);
-//			target.spotTable.Add(ListableClass(
+           target.spotTable.Add(buttonList);
         }
     }
 
