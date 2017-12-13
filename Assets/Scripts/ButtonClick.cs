@@ -1,25 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ButtonClick : MonoBehaviour
 {
 	public MapManager parent;
+	public Animator animator;
 
-	// Use this for initialization
-	void Start () 
+	private bool onDown = false;
+
+	public void OnMouseDown()
 	{
-		this.parent = transform.parent.gameObject.transform.parent.gameObject.GetComponent<MapManager> ();
-	}
-	
-	// Update is called once per frame
-	void Update () 
-	{
-		
+		// parent.OnChildClick(gameObject);
+		animator.SetBool("Pointer Down", true);
+		onDown = true;
 	}
 
-	void OnMouseDown()
+	public void OnMouseUp()
 	{
-		parent.OnChildClick (gameObject);
+		if (onDown)
+		{
+			animator.SetBool("Pointer Down", false);
+			onDown = false;
+		}
 	}
 }

@@ -110,7 +110,7 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &374790593
+--- !u!1001 &314113202
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -148,34 +148,6 @@ Prefab:
     - target: {fileID: 4703529402478638, guid: 232f86888939a437b98ec5c4155a458a, type: 2}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4703529402478638, guid: 232f86888939a437b98ec5c4155a458a, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4703529402478638, guid: 232f86888939a437b98ec5c4155a458a, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 4898906926186498, guid: 232f86888939a437b98ec5c4155a458a, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4898906926186498, guid: 232f86888939a437b98ec5c4155a458a, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4898906926186498, guid: 232f86888939a437b98ec5c4155a458a, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4898906926186498, guid: 232f86888939a437b98ec5c4155a458a, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.8660254
-      objectReference: {fileID: 0}
-    - target: {fileID: 4898906926186498, guid: 232f86888939a437b98ec5c4155a458a, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 232f86888939a437b98ec5c4155a458a, type: 2}
@@ -564,7 +536,7 @@ MonoBehaviour:
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114200661277909780, guid: 232f86888939a437b98ec5c4155a458a,
     type: 2}
-  m_PrefabInternal: {fileID: 374790593}
+  m_PrefabInternal: {fileID: 314113202}
   m_Script: {fileID: 11500000, guid: 4dfb5901b8a08434d8e24fd5e1bc7299, type: 3}
 --- !u!1 &1787148009
 GameObject:
