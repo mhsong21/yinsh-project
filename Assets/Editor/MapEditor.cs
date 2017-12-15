@@ -53,6 +53,8 @@ public class MapEditor : EditorWindow
                 button.name = "Button_" + (char)((char)'a' + colIndex) + "_" + (rowIndex + 1);
                 button.transform.SetParent(go.transform, false);
                 button.transform.localPosition = CalcButtonPosition(colIndex, rowIndex);
+                button.GetComponent<ButtonCell>().x = colIndex;
+                button.GetComponent<ButtonCell>().y = rowIndex;
                 buttonList.rawData.Add(button);
             }
            target.spotTable.Add(buttonList);
@@ -61,7 +63,7 @@ public class MapEditor : EditorWindow
 
     private Vector3 CalcButtonPosition(int colIndex, int rowIndex)
     {
-        float colOffset = buttonMargin * ((totalSpot / 2) - colIndex) * Mathf.Cos(60f);
+        float colOffset = buttonMargin * ((totalSpot / 2) - colIndex) * Mathf.Sqrt(3f) * 0.5f;
         float rowOffset = (buttonMargin * ((totalSpot / 2) - rowIndex)) - (buttonMargin * ((totalSpot / 2) - colIndex) * 0.5f);
         return new Vector3(rowOffset, 0, colOffset);
     }

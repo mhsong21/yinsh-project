@@ -6,14 +6,15 @@ public class MapManager : MonoBehaviour
 {
     public List<SerializableGameObjectList> spotTable;
 
+    private List<int> bottomOffsetList = new List<int>(){1, 0, 0, 0, 0, 1, 1, 2, 3, 4, 6};
+
     public void EnableAllButtons()
     {
         for (int i = 0; i < spotTable.Count; ++i)
         {
             for (int j = 0; j < spotTable[i].rawData.Count; ++j)
             {
-                Renderer renderer = spotTable[i][j].GetComponent<Renderer>();
-                renderer.material.color = Color.black;
+                spotTable[i][j].GetComponent<ButtonCell>().EnableButton();
             }
         }
     }
@@ -24,10 +25,15 @@ public class MapManager : MonoBehaviour
         {
             for (int j = 0; j < spotTable[i].rawData.Count; ++j)
             {
-                Renderer renderer = spotTable[i][j].GetComponent<Renderer>();
-                renderer.material.color = Color.gray;
+                spotTable[i][j].GetComponent<ButtonCell>().DisableButton();
             }
         }
+    }
+
+    public ButtonCell GetButtonCell(int x, int y)
+    {
+        int bottomOffset = bottomOffsetList[x];
+        return spotTable[x][y - bottomOffset].GetComponent<ButtonCell>();
     }
 
     public void OnChildClick(GameObject obj)

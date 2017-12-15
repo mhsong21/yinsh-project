@@ -2,10 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum GameState
+{
+	SetupState,
+	ProcessState
+};
+
 public class GameManager : MonoBehaviour
 {
 	public static GameManager Instance;
-
 	public MapManager mapManager;
 
 	public void Start()
