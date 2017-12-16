@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
 	public static GameManager Instance;
 	public MapManager mapManager;
 
+	private GameState state = GameState.SetupState;
+
 	public void Start()
 	{
 		Instance = this;
@@ -21,6 +23,9 @@ public class GameManager : MonoBehaviour
 
 	public void OnClickButton(GameObject obj)
 	{
-		Debug.Log(obj);
+		var buttonCell = obj.GetComponent<ButtonCell> ();
+		var x = buttonCell.x;
+		var y = buttonCell.y;
+		Debug.Log (x + ", " + y + " button pressed!");
 	}
 }

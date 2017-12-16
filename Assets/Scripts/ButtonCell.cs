@@ -21,6 +21,11 @@ public class ButtonCell : MonoBehaviour
 
 	private bool onDown = false;
 
+	public void Start()
+	{
+		this.parent = transform.parent.gameObject.transform.parent.gameObject.GetComponent<MapManager> ();
+	}
+
 	public bool IsRingState()
 	{
 		return buttonState == ButtonState.RingState;
@@ -39,6 +44,7 @@ public class ButtonCell : MonoBehaviour
 	public void OnMouseDown()
 	{
 		onDown = true;
+		parent.OnChildClick (gameObject);
 	}
 
 	public void OnMouseUp()
