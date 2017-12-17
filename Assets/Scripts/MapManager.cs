@@ -36,8 +36,12 @@ public class MapManager : MonoBehaviour
         return spotTable[x][y - bottomOffset].GetComponent<ButtonCell>();
     }
 
-    public void OnChildClick(GameObject obj)
-    {
-        GameManager.Instance.OnClickButton(obj);
-    }
+	public void AddRingToCell(GameObject ring, int x, int y)
+	{
+		int bottomOffset = bottomOffsetList[x];
+		var cell = spotTable [x] [y - bottomOffset];
+		ring.transform.parent = cell.transform;
+		ring.transform.localPosition = new Vector3 (0, 0.1f, 0);
+		ring.transform.localScale = new Vector3 (2, 2, 2);
+	}
 }

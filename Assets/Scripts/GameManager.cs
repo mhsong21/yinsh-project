@@ -11,21 +11,79 @@ public enum GameState
 public class GameManager : MonoBehaviour
 {
 	public static GameManager Instance;
+	public NewObjectPullerScript objectPuller;
 	public MapManager mapManager;
+	public Player player1;
+	public Player player2;
 
 	private GameState state = GameState.SetupState;
+	private Player currentPlayer;
+	private ButtonCell lastClicked;
 
 	public void Start()
 	{
 		Instance = this;
 		mapManager.EnableAllButtons();
+		currentPlayer = player1;
+		lastClicked = null;
 	}
 
-	public void OnClickButton(GameObject obj)
+	public void OnClickButton(ButtonCell cell)
 	{
-		var buttonCell = obj.GetComponent<ButtonCell> ();
-		var x = buttonCell.x;
-		var y = buttonCell.y;
+		var x = cell.x;
+		var y = cell.y;
+//		var buttonState = cell.buttonState;
 		Debug.Log (x + ", " + y + " button pressed!");
+
+		switch (state)
+		{
+		case GameState.SetupState:
+			if (lastClicked == cell) 
+			{
+				cell.buttonState = ButtonState.RingNormalState;
+				GameObject ring;
+				Player nextPlayer;
+				if (currentPlayer == player1) 
+				{
+					ring = objectPuller.GetWhiteRing ();
+					nextPlayer = player2;
+				} 
+				else 
+				{
+					ring = objectPuller.GetBlackRing ();
+					nextPlayer = player1;
+				}
+
+				ring.SetActive (true);
+				currentPlayer.AddRing (ring);
+				mapManager.AddRingToCell (ring, x, y);
+				currentPlayer = nextPlayer;
+
+				if (player1.ringCount == 5 && player2.ringCount == 5) 
+					state = GameState.ProcessState;
+			} 
+			else 
+			{
+				if (lastClicked != null)
+					lastClicked.buttonState = ButtonState.EmptyState;
+				
+				cell.buttonState = ButtonState.RingPressedState;
+			}
+				
+			break;
+		case GameState.ProcessState:
+			if (lastClicked == cell) 
+			{
+				cell.buttonState = ButtonState.RingNormalState;
+
+
+			} 
+			else 
+			{
+			}
+			break;
+		}
+		lastClicked = cell;
+		Debug.Log (state);
 	}
 }

@@ -2,20 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player 
+public class Player: MonoBehaviour
 {
-	public Ring[] rings;
+	public List<GameObject> rings;
 	public int ringCount 
 	{
 		get 
 		{
-			return rings.Length;
+			return rings.Count;
 		}
 	}
 
 	public void ActiveRings() 
 	{
 		
+	}
+
+	public void AddRing(GameObject ring)
+	{
+		rings.Add (ring);
 	}
 
 }

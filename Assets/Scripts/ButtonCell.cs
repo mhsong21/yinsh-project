@@ -5,14 +5,14 @@ using UnityEngine.EventSystems;
 
 public enum ButtonState
 {
-    RingState,
+    RingPressedState,
+	RingNormalState,
     StoneState,
     EmptyState
 };
 
 public class ButtonCell : MonoBehaviour
 {
-	public MapManager parent;
 	public Animator animator;
 	public GameObject ringTrans;
 	public ButtonState buttonState = ButtonState.EmptyState;
@@ -21,14 +21,14 @@ public class ButtonCell : MonoBehaviour
 
 	private bool onDown = false;
 
-	public void Start()
+	public bool IsRingPressedState()
 	{
-		this.parent = transform.parent.gameObject.transform.parent.gameObject.GetComponent<MapManager> ();
+		return buttonState == ButtonState.RingPressedState;
 	}
 
-	public bool IsRingState()
+	public bool IsRingNormalState()
 	{
-		return buttonState == ButtonState.RingState;
+		return buttonState == ButtonState.RingNormalState;
 	}
 
 	public bool IsStoneState()
@@ -44,13 +44,13 @@ public class ButtonCell : MonoBehaviour
 	public void OnMouseDown()
 	{
 		onDown = true;
-		parent.OnChildClick (gameObject);
 	}
 
 	public void OnMouseUp()
 	{
 		if (onDown)
 		{
+			GameManager.Instance.OnClickButton(this);
 			if (IsEmptyState())
 			{
 				ringTrans.SetActive(true);
@@ -78,5 +78,11 @@ public class ButtonCell : MonoBehaviour
 	public void OnMouseExit()
 	{
 		ringTrans.SetActive(false);
+	}
+
+	public void Update()
+	{
+		ringTrans.SetActive(IsRingPressedState());
+
 	}
 }
