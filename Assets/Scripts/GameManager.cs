@@ -42,9 +42,10 @@ public class GameManager : MonoBehaviour
 
 			if (lastClicked == cell) 
 			{
-				cell.buttonState = ButtonState.RingState;
 				GameObject ring;
 				Player nextPlayer;
+
+				cell.buttonState = ButtonState.RingState;
 				if (currentPlayer == player1) 
 				{
 					ring = objectPuller.GetWhiteRing ();
@@ -66,7 +67,7 @@ public class GameManager : MonoBehaviour
 			} 
 			else 
 			{
-				if (lastClicked != null)
+				if (lastClicked != null && lastClicked.IsPressedState())
 					lastClicked.buttonState = ButtonState.EmptyState;
 				
 				cell.buttonState = ButtonState.PressedState;
