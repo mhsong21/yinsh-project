@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewObjectPullerScript: MonoBehaviour
+public class ObjectPool: MonoBehaviour
 {
 	public GameObject blackRingPrefab;
 	public GameObject whiteRingPrefab;

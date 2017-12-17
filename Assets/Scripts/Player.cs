@@ -18,9 +18,9 @@ public class Player: MonoBehaviour
 		
 	}
 
-	public void AddRing(GameObject ring)
+	public void AddRing(Ring ring)
 	{
-		rings.Add (ring);
+		rings.Add (ring.gameObject);
 	}
 
 }

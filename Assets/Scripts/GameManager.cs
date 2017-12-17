@@ -12,7 +12,7 @@ public enum GameState
 public class GameManager : MonoBehaviour
 {
 	public static GameManager Instance;
-	public NewObjectPullerScript objectPuller;
+	public ObjectPool objectPool;
 	public MapManager mapManager;
 	public Player player1;
 	public Player player2;
@@ -46,47 +46,68 @@ public class GameManager : MonoBehaviour
 
 			if (lastClicked == cell) 
 			{
-				GameObject ring;
+				GameObject obj;
 				Player nextPlayer;
 
 				cell.buttonState = ButtonState.RingState;
 				if (currentPlayer == player1) 
 				{
-					ring = objectPuller.GetWhiteRing ();
+					obj = objectPool.GetWhiteRing ();
 					nextPlayer = player2;
 				} 
 				else 
 				{
-					ring = objectPuller.GetBlackRing ();
+					obj = objectPool.GetBlackRing ();
 					nextPlayer = player1;
 				}
 
-				ring.SetActive (true);
+				obj.SetActive (true);
+				Ring ring = obj.GetComponent<Ring> ();
 				currentPlayer.AddRing (ring);
-				mapManager.AddRingToCell (ring, x, y);
+				mapManager.AddRingToCell (ring, cell);
 				currentPlayer = nextPlayer;
 
-				if (player1.ringCount == 5 && player2.ringCount == 5) 
+				if (player1.ringCount == 5 && player2.ringCount == 5)
+				{
 					state = GameState.ProcessState;
+					lastClicked = null;
+				}
 			} 
 			else 
 			{
-				if (lastClicked != null && lastClicked.IsPressedState())
+				if (lastClicked != null && lastClicked.IsSelectedState())
 					lastClicked.buttonState = ButtonState.EmptyState;
 				
-				cell.buttonState = ButtonState.PressedState;
+				cell.buttonState = ButtonState.SelectedState;
 			}
 				
 			break;
 		case GameState.ProcessState:
-			if (lastClicked == cell) 
+			if (cell.IsStoneState())
+				return;
+
+			if (lastClicked != null && lastClicked.IsRingState() && cell.IsEmptyState())
 			{
-//				cell.buttonState = ButtonState.RingState;
+				Player nextPlayer;
+				if (currentPlayer == player1)
+				{
+					nextPlayer = player2;
+				}
+				else
+				{
+					nextPlayer = player1;
+				}
 
-
+				mapManager.MoveRingToCell (lastClicked, cell);
+				currentPlayer = nextPlayer;
+				lastClicked = null;
 			} 
-			else 
+			else if (cell.IsRingState())
 			{
+				if (lastClicked != null && lastClicked.IsRingState () && lastClicked.ring.IsSelected ())
+					lastClicked.ring.state = RingState.Idle;
+
+				cell.ring.state = RingState.Selected;
 			}
 			break;
 		}

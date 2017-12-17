@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public enum ButtonState
 {
-    PressedState,
+    SelectedState,
 	RingState,
     StoneState,
     EmptyState
@@ -19,11 +19,13 @@ public class ButtonCell : MonoBehaviour
 	public int x;
 	public int y;
 
+	[HideInInspector] public Ring ring;
+
 	private bool onDown = false;
 
-	public bool IsPressedState()
+	public bool IsSelectedState()
 	{
-		return buttonState == ButtonState.PressedState;
+		return buttonState == ButtonState.SelectedState;
 	}
 
 	public bool IsRingState()
@@ -82,6 +84,6 @@ public class ButtonCell : MonoBehaviour
 
 	public void Update()
 	{
-		ringTrans.SetActive(IsPressedState());
+		ringTrans.SetActive(IsSelectedState());
 	}
 }
