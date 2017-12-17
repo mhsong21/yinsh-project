@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum GameState
 {
@@ -15,6 +16,7 @@ public class GameManager : MonoBehaviour
 	public MapManager mapManager;
 	public Player player1;
 	public Player player2;
+	public Text statusText;
 
 	private GameState state = GameState.SetupState;
 	private Player currentPlayer;
@@ -26,6 +28,8 @@ public class GameManager : MonoBehaviour
 		mapManager.EnableAllButtons();
 		currentPlayer = player1;
 		lastClicked = null;
+
+		SetupStatusText ();
 	}
 
 	public void OnClickButton(ButtonCell cell)
@@ -87,6 +91,15 @@ public class GameManager : MonoBehaviour
 			break;
 		}
 		lastClicked = cell;
-		Debug.Log (state);
+
+		SetupStatusText ();
+	}
+
+	private void SetupStatusText()
+	{
+		string gameState = state == GameState.SetupState ? "Setup State" : "Progress State";
+		string playerState = (currentPlayer == player1) ? "Player1 Turn" : "Player2 Turn";
+
+		statusText.text = gameState + "\n" + playerState;
 	}
 }

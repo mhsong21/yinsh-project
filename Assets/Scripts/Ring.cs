@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ring : MonoBehaviour {
+public class Ring : MonoBehaviour 
+{
 
 	public int x;
 	public int y;
@@ -12,7 +13,8 @@ public class Ring : MonoBehaviour {
 		if (other == null || GetType () != other.GetType ())
 			return false;
 
-		if (x == other.x && y == other.y)
+		Ring obj = other as Ring;
+		if (x == obj.x && y == obj.y)
 			return true;
 
 		return false;
