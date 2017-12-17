@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 114853988009012098}
   - component: {fileID: 135159587515574428}
   m_Layer: 0
-  m_Name: Button Cell
+  m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -338,10 +338,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cad68d02f888d4830b4028e8e8774962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 0}
   animator: {fileID: 95438048114699938}
   ringTrans: {fileID: 1296155635613482}
-  buttonState: 2
+  buttonState: 3
+  x: 0
+  y: 0
 --- !u!135 &135159587515574428
 SphereCollider:
   m_ObjectHideFlags: 1

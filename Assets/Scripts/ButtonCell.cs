@@ -5,21 +5,28 @@ using UnityEngine.EventSystems;
 
 public enum ButtonState
 {
-    RingState,
+    SelectedState,
+	RingState,
     StoneState,
     EmptyState
 };
 
 public class ButtonCell : MonoBehaviour
 {
-	public MapManager parent;
 	public Animator animator;
 	public GameObject ringTrans;
 	public ButtonState buttonState = ButtonState.EmptyState;
 	public int x;
 	public int y;
 
+	[HideInInspector] public Ring ring;
+
 	private bool onDown = false;
+
+	public bool IsSelectedState()
+	{
+		return buttonState == ButtonState.SelectedState;
+	}
 
 	public bool IsRingState()
 	{
@@ -45,6 +52,7 @@ public class ButtonCell : MonoBehaviour
 	{
 		if (onDown)
 		{
+			GameManager.Instance.OnClickButton(this);
 			if (IsEmptyState())
 			{
 				ringTrans.SetActive(true);
@@ -72,5 +80,10 @@ public class ButtonCell : MonoBehaviour
 	public void OnMouseExit()
 	{
 		ringTrans.SetActive(false);
+	}
+
+	public void Update()
+	{
+		ringTrans.SetActive(IsSelectedState());
 	}
 }
