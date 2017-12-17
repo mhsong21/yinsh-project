@@ -32,15 +32,17 @@ public class GameManager : MonoBehaviour
 	{
 		var x = cell.x;
 		var y = cell.y;
-//		var buttonState = cell.buttonState;
 		Debug.Log (x + ", " + y + " button pressed!");
 
 		switch (state)
 		{
 		case GameState.SetupState:
+			if (cell.IsRingState() || cell.IsStoneState())
+				return;
+
 			if (lastClicked == cell) 
 			{
-				cell.buttonState = ButtonState.RingNormalState;
+				cell.buttonState = ButtonState.RingState;
 				GameObject ring;
 				Player nextPlayer;
 				if (currentPlayer == player1) 
@@ -67,14 +69,14 @@ public class GameManager : MonoBehaviour
 				if (lastClicked != null)
 					lastClicked.buttonState = ButtonState.EmptyState;
 				
-				cell.buttonState = ButtonState.RingPressedState;
+				cell.buttonState = ButtonState.PressedState;
 			}
 				
 			break;
 		case GameState.ProcessState:
 			if (lastClicked == cell) 
 			{
-				cell.buttonState = ButtonState.RingNormalState;
+//				cell.buttonState = ButtonState.RingState;
 
 
 			} 
