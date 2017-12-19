@@ -5,8 +5,8 @@ using UnityEngine;
 public class MapManager : MonoBehaviour
 {
     public List<SerializableGameObjectList> spotTable;
-	public Vector3 ringLocalPosition = new Vector3 (0, 0.1f, 0);
-	public Vector3 ringLocalScale = new Vector3 (2, 2, 2);
+	public Vector3 ringLocalPosition = new Vector3(0, 0.1f, 0);
+	public Vector3 ringLocalScale = new Vector3(2f, 2f, 2f);
 
     private List<int> bottomOffsetList = new List<int>(){1, 0, 0, 0, 0, 1, 1, 2, 3, 4, 6};
 
@@ -35,7 +35,7 @@ public class MapManager : MonoBehaviour
 	public GameObject GetButtonObject(int x,int y)
 	{
 		int bottomOffset = bottomOffsetList[x];
-		return spotTable [x] [y - bottomOffset];
+		return spotTable[x][y - bottomOffset];
 	}
 
     public ButtonCell GetButtonCell(int x, int y)
@@ -51,16 +51,16 @@ public class MapManager : MonoBehaviour
 		ring.x = cell.x;
 		ring.y = cell.y;
 
-		cell.GetComponent<ButtonCell> ().ring = ring;
+		cell.GetComponent<ButtonCell>().ring = ring;
 	}
 
 	public void MoveRingToCell(ButtonCell prev, ButtonCell next)
 	{
 		Ring ring = prev.ring;
 		prev.ring = null;
-		prev.buttonState = ButtonState.EmptyState;
+		prev.state = ButtonState.Empty;
 		next.ring = ring;
-		next.buttonState = ButtonState.RingState;
+		next.state = ButtonState.Ring;
 
 		ring.transform.parent = next.transform;
 		ring.transform.localPosition = ringLocalPosition;

@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
 		currentPlayer = player1;
 		lastClicked = null;
 
-		SetupStatusText ();
+		SetupStatusText();
 	}
 
 	public void OnClickButton(ButtonCell cell)
@@ -44,27 +44,27 @@ public class GameManager : MonoBehaviour
 			if (cell.IsRingState() || cell.IsStoneState())
 				return;
 
-			if (lastClicked == cell) 
+			if (lastClicked == cell)
 			{
 				GameObject obj;
 				Player nextPlayer;
 
-				cell.buttonState = ButtonState.RingState;
-				if (currentPlayer == player1) 
+				cell.state = ButtonState.Ring;
+				if (currentPlayer == player1)
 				{
-					obj = objectPool.GetWhiteRing ();
+					obj = objectPool.GetWhiteRing();
 					nextPlayer = player2;
-				} 
-				else 
+				}
+				else
 				{
-					obj = objectPool.GetBlackRing ();
+					obj = objectPool.GetBlackRing();
 					nextPlayer = player1;
 				}
 
-				obj.SetActive (true);
-				Ring ring = obj.GetComponent<Ring> ();
-				currentPlayer.AddRing (ring);
-				mapManager.AddRingToCell (ring, cell);
+				obj.SetActive(true);
+				Ring ring = obj.GetComponent<Ring>();
+				currentPlayer.AddRing(ring);
+				mapManager.AddRingToCell(ring, cell);
 				currentPlayer = nextPlayer;
 
 				if (player1.ringCount == 5 && player2.ringCount == 5)
@@ -72,15 +72,14 @@ public class GameManager : MonoBehaviour
 					state = GameState.ProcessState;
 					lastClicked = null;
 				}
-			} 
+			}
 			else 
 			{
 				if (lastClicked != null && lastClicked.IsSelectedState())
-					lastClicked.buttonState = ButtonState.EmptyState;
+					lastClicked.state = ButtonState.Empty;
 				
-				cell.buttonState = ButtonState.SelectedState;
+				cell.state = ButtonState.Selected;
 			}
-				
 			break;
 		case GameState.ProcessState:
 			if (cell.IsStoneState())
@@ -98,22 +97,22 @@ public class GameManager : MonoBehaviour
 					nextPlayer = player1;
 				}
 
-				mapManager.MoveRingToCell (lastClicked, cell);
+				mapManager.MoveRingToCell(lastClicked, cell);
 				currentPlayer = nextPlayer;
 				lastClicked = null;
 			} 
 			else if (cell.IsRingState())
 			{
-				if (lastClicked != null && lastClicked.IsRingState () && lastClicked.ring.IsSelected ())
-					lastClicked.ring.state = RingState.Idle;
+				if (lastClicked != null && lastClicked.IsRingState() && lastClicked.ring.IsSelected())
+					lastClicked.ring.SetState(RingState.Idle);
 
-				cell.ring.state = RingState.Selected;
+				cell.ring.SetState(RingState.Selected);
 			}
 			break;
 		}
 		lastClicked = cell;
 
-		SetupStatusText ();
+		SetupStatusText();
 	}
 
 	private void SetupStatusText()

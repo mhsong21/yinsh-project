@@ -24,34 +24,16 @@ public class Ring : MonoBehaviour
 		return state == RingState.Idle;
 	}
 
-	public override bool Equals (object other)
+	public void SetState(RingState newState)
 	{
-		if (other == null || GetType () != other.GetType ())
-			return false;
-
-		Ring obj = other as Ring;
-		if (x == obj.x && y == obj.y)
-			return true;
-
-		return false;
-	}
-
-	// Use this for initialization
-	void Start ()
-	{
-		
-	}
-	
-	// Update is called once per frame
-	void Update ()
-	{
-		if (state == RingState.Idle) 
+		this.state = newState;
+		if (newState == RingState.Idle)
 		{
-			transform.localScale = new Vector3 (2, 2, 2);
-		} 
-		else 
-		{
-			transform.localScale = new Vector3 (2.5f, 2.5f, 2.5f);
+			transform.localScale = new Vector3(2f, 2f, 2f);
 		}
-	}
+		else
+		{
+			transform.localScale = new Vector3(2.2f, 2.2f, 2.2f);
+		}
+	} 
 }

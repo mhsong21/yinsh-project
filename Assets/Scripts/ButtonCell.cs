@@ -5,17 +5,17 @@ using UnityEngine.EventSystems;
 
 public enum ButtonState
 {
-    SelectedState,
-	RingState,
-    StoneState,
-    EmptyState
+    Selected,
+	Ring,
+    Stone,
+    Empty
 };
 
 public class ButtonCell : MonoBehaviour
 {
 	public Animator animator;
 	public GameObject ringTrans;
-	public ButtonState buttonState = ButtonState.EmptyState;
+	public ButtonState state = ButtonState.Empty;
 	public int x;
 	public int y;
 
@@ -25,22 +25,22 @@ public class ButtonCell : MonoBehaviour
 
 	public bool IsSelectedState()
 	{
-		return buttonState == ButtonState.SelectedState;
+		return state == ButtonState.Selected;
 	}
 
 	public bool IsRingState()
 	{
-		return buttonState == ButtonState.RingState;
+		return state == ButtonState.Ring;
 	}
 
 	public bool IsStoneState()
 	{
-		return buttonState == ButtonState.StoneState;
+		return state == ButtonState.Stone;
 	}
 
 	public bool IsEmptyState()
 	{
-		return buttonState == ButtonState.EmptyState;
+		return state == ButtonState.Empty;
 	}
 
 	public void OnMouseDown()

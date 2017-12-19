@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
+  m_IndirectSpecularColor: {r: 0.43668893, g: 0.4842832, b: 0.56452656, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -267,7 +267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2569525}
   ringTrans: {fileID: 1800861687}
-  buttonState: 3
+  state: 3
   x: 9
   y: 5
   ring: {fileID: 0}
@@ -347,7 +347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 11537277}
   ringTrans: {fileID: 1482608730}
-  buttonState: 3
+  state: 3
   x: 6
   y: 4
   ring: {fileID: 0}
@@ -542,7 +542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 19928933}
   ringTrans: {fileID: 1870094576}
-  buttonState: 3
+  state: 3
   x: 8
   y: 4
   ring: {fileID: 0}
@@ -691,7 +691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 27620997}
   ringTrans: {fileID: 1153881755}
-  buttonState: 3
+  state: 3
   x: 8
   y: 6
   ring: {fileID: 0}
@@ -1635,7 +1635,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 110818441}
   ringTrans: {fileID: 892512824}
-  buttonState: 3
+  state: 3
   x: 5
   y: 5
   ring: {fileID: 0}
@@ -1773,7 +1773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 126364690}
   ringTrans: {fileID: 1633318955}
-  buttonState: 3
+  state: 3
   x: 8
   y: 8
   ring: {fileID: 0}
@@ -1922,7 +1922,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 136248358}
   ringTrans: {fileID: 873836758}
-  buttonState: 3
+  state: 3
   x: 7
   y: 5
   ring: {fileID: 0}
@@ -2307,7 +2307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 152240672}
   ringTrans: {fileID: 1635999056}
-  buttonState: 3
+  state: 3
   x: 9
   y: 7
   ring: {fileID: 0}
@@ -2485,7 +2485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 176741610}
   ringTrans: {fileID: 340939965}
-  buttonState: 3
+  state: 3
   x: 5
   y: 4
   ring: {fileID: 0}
@@ -2917,7 +2917,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 221800011}
   ringTrans: {fileID: 620377623}
-  buttonState: 3
+  state: 3
   x: 1
   y: 4
   ring: {fileID: 0}
@@ -3095,7 +3095,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 227058623}
   ringTrans: {fileID: 1574321478}
-  buttonState: 3
+  state: 3
   x: 10
   y: 6
   ring: {fileID: 0}
@@ -3382,7 +3382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 233128825}
   ringTrans: {fileID: 1364337655}
-  buttonState: 3
+  state: 3
   x: 7
   y: 6
   ring: {fileID: 0}
@@ -3491,7 +3491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 241458577}
   ringTrans: {fileID: 431245447}
-  buttonState: 3
+  state: 3
   x: 4
   y: 3
   ring: {fileID: 0}
@@ -3952,7 +3952,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 265984053}
   ringTrans: {fileID: 2024333012}
-  buttonState: 3
+  state: 3
   x: 3
   y: 7
   ring: {fileID: 0}
@@ -4061,7 +4061,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 271584975}
   ringTrans: {fileID: 537105920}
-  buttonState: 3
+  state: 3
   x: 9
   y: 9
   ring: {fileID: 0}
@@ -4141,7 +4141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 275851174}
   ringTrans: {fileID: 308396941}
-  buttonState: 3
+  state: 3
   x: 9
   y: 6
   ring: {fileID: 0}
@@ -4221,7 +4221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 285774211}
   ringTrans: {fileID: 1331492159}
-  buttonState: 3
+  state: 3
   x: 3
   y: 3
   ring: {fileID: 0}
@@ -4370,7 +4370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 307747552}
   ringTrans: {fileID: 1096436465}
-  buttonState: 3
+  state: 3
   x: 3
   y: 0
   ring: {fileID: 0}
@@ -4736,7 +4736,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 323049303}
   ringTrans: {fileID: 523480551}
-  buttonState: 3
+  state: 3
   x: 9
   y: 10
   ring: {fileID: 0}
@@ -4757,80 +4757,12 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!1 &329214175
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 329214176}
-  - component: {fileID: 329214178}
-  - component: {fileID: 329214177}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &329214176
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 329214175}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1998280559}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 60}
-  m_Pivot: {x: 0.5, y: 1}
---- !u!114 &329214177
+--- !u!114 &329214177 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 329214175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
+  m_PrefabParentObject: {fileID: 114662390999042620, guid: 8ec35ae56ca414514a3b0d83547ad88a,
+    type: 2}
+  m_PrefabInternal: {fileID: 629974648}
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 17
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: New Text
---- !u!222 &329214178
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 329214175}
 --- !u!1 &337315121
 GameObject:
   m_ObjectHideFlags: 0
@@ -4890,7 +4822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 337315125}
   ringTrans: {fileID: 2062642197}
-  buttonState: 3
+  state: 3
   x: 5
   y: 1
   ring: {fileID: 0}
@@ -5166,7 +5098,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 356370243}
   ringTrans: {fileID: 237899514}
-  buttonState: 3
+  state: 3
   x: 0
   y: 3
   ring: {fileID: 0}
@@ -5453,7 +5385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 381966992}
   ringTrans: {fileID: 836987483}
-  buttonState: 3
+  state: 3
   x: 6
   y: 3
   ring: {fileID: 0}
@@ -5787,7 +5719,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 403650179}
   ringTrans: {fileID: 388889460}
-  buttonState: 3
+  state: 3
   x: 4
   y: 8
   ring: {fileID: 0}
@@ -5936,7 +5868,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 411737485}
   ringTrans: {fileID: 1165143582}
-  buttonState: 3
+  state: 3
   x: 4
   y: 1
   ring: {fileID: 0}
@@ -6016,7 +5948,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 415306255}
   ringTrans: {fileID: 1020307899}
-  buttonState: 3
+  state: 3
   x: 2
   y: 4
   ring: {fileID: 0}
@@ -6842,7 +6774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 461256941}
   ringTrans: {fileID: 1290131568}
-  buttonState: 3
+  state: 3
   x: 0
   y: 2
   ring: {fileID: 0}
@@ -7164,7 +7096,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 478753397}
   ringTrans: {fileID: 1640596514}
-  buttonState: 3
+  state: 3
   x: 3
   y: 1
   ring: {fileID: 0}
@@ -7244,7 +7176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 484228146}
   ringTrans: {fileID: 319391669}
-  buttonState: 3
+  state: 3
   x: 6
   y: 9
   ring: {fileID: 0}
@@ -7560,7 +7492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 501490328}
   ringTrans: {fileID: 951293773}
-  buttonState: 3
+  state: 3
   x: 7
   y: 2
   ring: {fileID: 0}
@@ -7767,7 +7699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 522518001}
   ringTrans: {fileID: 1098095577}
-  buttonState: 3
+  state: 3
   x: 5
   y: 6
   ring: {fileID: 0}
@@ -8435,7 +8367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 564593816}
   ringTrans: {fileID: 54181821}
-  buttonState: 3
+  state: 3
   x: 1
   y: 5
   ring: {fileID: 0}
@@ -8986,6 +8918,10 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1042582215}
+    - target: {fileID: 1061536805384920, guid: 8ec35ae56ca414514a3b0d83547ad88a, type: 2}
+      propertyPath: m_Name
+      value: Status Text
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ec35ae56ca414514a3b0d83547ad88a, type: 2}
   m_IsPrefabParent: 0
@@ -9411,7 +9347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 669677361}
   ringTrans: {fileID: 588587219}
-  buttonState: 3
+  state: 3
   x: 8
   y: 10
   ring: {fileID: 0}
@@ -10133,7 +10069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 702114889}
   ringTrans: {fileID: 1150232119}
-  buttonState: 3
+  state: 3
   x: 7
   y: 7
   ring: {fileID: 0}
@@ -10242,7 +10178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 714612668}
   ringTrans: {fileID: 668945332}
-  buttonState: 3
+  state: 3
   x: 4
   y: 5
   ring: {fileID: 0}
@@ -11048,7 +10984,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 802973722}
   ringTrans: {fileID: 391399210}
-  buttonState: 3
+  state: 3
   x: 2
   y: 2
   ring: {fileID: 0}
@@ -11266,7 +11202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 810343503}
   ringTrans: {fileID: 144361102}
-  buttonState: 3
+  state: 3
   x: 6
   y: 6
   ring: {fileID: 0}
@@ -12141,7 +12077,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 879542116}
   ringTrans: {fileID: 1994080761}
-  buttonState: 3
+  state: 3
   x: 2
   y: 5
   ring: {fileID: 0}
@@ -12722,7 +12658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 907624587}
   ringTrans: {fileID: 101252940}
-  buttonState: 3
+  state: 3
   x: 4
   y: 6
   ring: {fileID: 0}
@@ -12940,7 +12876,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 922255376}
   ringTrans: {fileID: 428824693}
-  buttonState: 3
+  state: 3
   x: 9
   y: 4
   ring: {fileID: 0}
@@ -13521,7 +13457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 969634493}
   ringTrans: {fileID: 1777396165}
-  buttonState: 3
+  state: 3
   x: 1
   y: 0
   ring: {fileID: 0}
@@ -13601,7 +13537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 970616837}
   ringTrans: {fileID: 527906557}
-  buttonState: 3
+  state: 3
   x: 1
   y: 3
   ring: {fileID: 0}
@@ -13681,7 +13617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 985473121}
   ringTrans: {fileID: 1726394197}
-  buttonState: 3
+  state: 3
   x: 7
   y: 3
   ring: {fileID: 0}
@@ -14727,7 +14663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1044322377}
   ringTrans: {fileID: 209686073}
-  buttonState: 3
+  state: 3
   x: 8
   y: 9
   ring: {fileID: 0}
@@ -15510,7 +15446,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1077703327}
   ringTrans: {fileID: 1307672296}
-  buttonState: 3
+  state: 3
   x: 6
   y: 2
   ring: {fileID: 0}
@@ -15888,7 +15824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1104082153}
   ringTrans: {fileID: 1935598210}
-  buttonState: 3
+  state: 3
   x: 9
   y: 8
   ring: {fileID: 0}
@@ -16556,7 +16492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1131428506}
   ringTrans: {fileID: 1130170881}
-  buttonState: 3
+  state: 3
   x: 3
   y: 6
   ring: {fileID: 0}
@@ -17333,7 +17269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1165291466}
   ringTrans: {fileID: 1614725698}
-  buttonState: 3
+  state: 3
   x: 5
   y: 2
   ring: {fileID: 0}
@@ -17442,7 +17378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1199645316}
   ringTrans: {fileID: 2127541286}
-  buttonState: 3
+  state: 3
   x: 2
   y: 7
   ring: {fileID: 0}
@@ -17522,7 +17458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1201580996}
   ringTrans: {fileID: 889979648}
-  buttonState: 3
+  state: 3
   x: 8
   y: 5
   ring: {fileID: 0}
@@ -17671,7 +17607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1208624549}
   ringTrans: {fileID: 194758509}
-  buttonState: 3
+  state: 3
   x: 5
   y: 9
   ring: {fileID: 0}
@@ -17751,7 +17687,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1214317595}
   ringTrans: {fileID: 269259321}
-  buttonState: 3
+  state: 3
   x: 6
   y: 1
   ring: {fileID: 0}
@@ -17929,7 +17865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1225272228}
   ringTrans: {fileID: 965464518}
-  buttonState: 3
+  state: 3
   x: 6
   y: 5
   ring: {fileID: 0}
@@ -18412,7 +18348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1246270235}
   ringTrans: {fileID: 2009696726}
-  buttonState: 3
+  state: 3
   x: 3
   y: 4
   ring: {fileID: 0}
@@ -18521,7 +18457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1262843998}
   ringTrans: {fileID: 1750563817}
-  buttonState: 3
+  state: 3
   x: 4
   y: 4
   ring: {fileID: 0}
@@ -19449,7 +19385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1328601124}
   ringTrans: {fileID: 1819075662}
-  buttonState: 3
+  state: 3
   x: 6
   y: 8
   ring: {fileID: 0}
@@ -19529,7 +19465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1330477757}
   ringTrans: {fileID: 1973953551}
-  buttonState: 3
+  state: 3
   x: 7
   y: 10
   ring: {fileID: 0}
@@ -20306,7 +20242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1399766342}
   ringTrans: {fileID: 486018759}
-  buttonState: 3
+  state: 3
   x: 3
   y: 2
   ring: {fileID: 0}
@@ -20370,7 +20306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1407952460}
   ringTrans: {fileID: 1336734846}
-  buttonState: 3
+  state: 3
   x: 10
   y: 9
   ring: {fileID: 0}
@@ -20466,7 +20402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1408980989}
   ringTrans: {fileID: 856818048}
-  buttonState: 3
+  state: 3
   x: 0
   y: 4
   ring: {fileID: 0}
@@ -20546,7 +20482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1414075347}
   ringTrans: {fileID: 310313843}
-  buttonState: 3
+  state: 3
   x: 3
   y: 8
   ring: {fileID: 0}
@@ -21160,7 +21096,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1451435367}
   ringTrans: {fileID: 1528333455}
-  buttonState: 3
+  state: 3
   x: 3
   y: 5
   ring: {fileID: 0}
@@ -21240,7 +21176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1452979893}
   ringTrans: {fileID: 696183798}
-  buttonState: 3
+  state: 3
   x: 2
   y: 3
   ring: {fileID: 0}
@@ -21527,7 +21463,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1480099004}
   ringTrans: {fileID: 1843170108}
-  buttonState: 3
+  state: 3
   x: 4
   y: 9
   ring: {fileID: 0}
@@ -21734,7 +21670,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1491391556}
   ringTrans: {fileID: 529979768}
-  buttonState: 3
+  state: 3
   x: 7
   y: 4
   ring: {fileID: 0}
@@ -22826,7 +22762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1596263334}
   ringTrans: {fileID: 1559486599}
-  buttonState: 3
+  state: 3
   x: 5
   y: 7
   ring: {fileID: 0}
@@ -23131,7 +23067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1627156941}
   ringTrans: {fileID: 1818248381}
-  buttonState: 3
+  state: 3
   x: 10
   y: 8
   ring: {fileID: 0}
@@ -23327,7 +23263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1638077347}
   ringTrans: {fileID: 1956551257}
-  buttonState: 3
+  state: 3
   x: 2
   y: 6
   ring: {fileID: 0}
@@ -23816,7 +23752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1659122410}
   ringTrans: {fileID: 1225243619}
-  buttonState: 3
+  state: 3
   x: 6
   y: 10
   ring: {fileID: 0}
@@ -24553,7 +24489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1710627324}
   ringTrans: {fileID: 1376764988}
-  buttonState: 3
+  state: 3
   x: 8
   y: 3
   ring: {fileID: 0}
@@ -25979,7 +25915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1844927976}
   ringTrans: {fileID: 1950504069}
-  buttonState: 3
+  state: 3
   x: 1
   y: 6
   ring: {fileID: 0}
@@ -26255,7 +26191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1851474340}
   ringTrans: {fileID: 1630413495}
-  buttonState: 3
+  state: 3
   x: 2
   y: 0
   ring: {fileID: 0}
@@ -26404,7 +26340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1855259303}
   ringTrans: {fileID: 1017668799}
-  buttonState: 3
+  state: 3
   x: 1
   y: 2
   ring: {fileID: 0}
@@ -26916,7 +26852,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1884569459}
   ringTrans: {fileID: 2123842487}
-  buttonState: 3
+  state: 3
   x: 10
   y: 7
   ring: {fileID: 0}
@@ -27134,7 +27070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1921333698}
   ringTrans: {fileID: 1164372024}
-  buttonState: 3
+  state: 3
   x: 4
   y: 2
   ring: {fileID: 0}
@@ -27657,7 +27593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1945940948}
   ringTrans: {fileID: 1019065944}
-  buttonState: 3
+  state: 3
   x: 6
   y: 7
   ring: {fileID: 0}
@@ -28169,7 +28105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1963078679}
   ringTrans: {fileID: 1110132403}
-  buttonState: 3
+  state: 3
   x: 8
   y: 7
   ring: {fileID: 0}
@@ -28750,7 +28686,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1997486149}
   ringTrans: {fileID: 1717130360}
-  buttonState: 3
+  state: 3
   x: 1
   y: 1
   ring: {fileID: 0}
@@ -28771,11 +28707,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!224 &1998280559 stripped
-RectTransform:
-  m_PrefabParentObject: {fileID: 224059551005944118, guid: 8ec35ae56ca414514a3b0d83547ad88a,
-    type: 2}
-  m_PrefabInternal: {fileID: 629974648}
 --- !u!1 &2009696726
 GameObject:
   m_ObjectHideFlags: 0
@@ -29031,7 +28962,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2028839278}
   ringTrans: {fileID: 674948698}
-  buttonState: 3
+  state: 3
   x: 4
   y: 0
   ring: {fileID: 0}
@@ -29249,7 +29180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2034421641}
   ringTrans: {fileID: 1874674096}
-  buttonState: 3
+  state: 3
   x: 0
   y: 1
   ring: {fileID: 0}
@@ -29605,7 +29536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2062016619}
   ringTrans: {fileID: 1286803512}
-  buttonState: 3
+  state: 3
   x: 4
   y: 7
   ring: {fileID: 0}
@@ -29852,7 +29783,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2083395098}
   ringTrans: {fileID: 1657752993}
-  buttonState: 3
+  state: 3
   x: 5
   y: 8
   ring: {fileID: 0}
@@ -29932,7 +29863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2083886054}
   ringTrans: {fileID: 1846882594}
-  buttonState: 3
+  state: 3
   x: 7
   y: 8
   ring: {fileID: 0}
@@ -30219,7 +30150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2101282879}
   ringTrans: {fileID: 93503540}
-  buttonState: 3
+  state: 3
   x: 7
   y: 9
   ring: {fileID: 0}
@@ -30328,7 +30259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2106048018}
   ringTrans: {fileID: 1685752069}
-  buttonState: 3
+  state: 3
   x: 5
   y: 3
   ring: {fileID: 0}
@@ -30506,7 +30437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2124039478}
   ringTrans: {fileID: 509645991}
-  buttonState: 3
+  state: 3
   x: 2
   y: 1
   ring: {fileID: 0}
