@@ -15,33 +15,25 @@ public class ButtonCell : MonoBehaviour
 {
 	public Animator animator;
 	public GameObject ringTrans;
-	public ButtonState state = ButtonState.Empty;
-	public int x { get; set; }
-	public int y;
 
-	[HideInInspector] public Ring ring;
+	// public accessors
+	public ButtonState state { get { return _state; } set { _state = value; } }
+	public bool isSelectedState { get { return _state == ButtonState.Selected; } }
+	public bool isRingState { get { return _state == ButtonState.Ring; } }
+	public bool isStoneState { get { return _state == ButtonState.Stone; } }
+	public bool isEmptyState { get { return _state == ButtonState.Empty; } }
+
+	public Ring ring { get { return _ring; } set { _ring = value; } }
+	public int x { get { return _x; } set { _x = value; } }
+	public int y { get { return _y; } set { _y = value; } }
+
+	// private fields
+	private ButtonState _state = ButtonState.Empty;
+	private Ring _ring;
+	private int _x;
+	private int _y;
 
 	private bool onDown = false;
-
-	public bool IsSelectedState()
-	{
-		return state == ButtonState.Selected;
-	}
-
-	public bool IsRingState()
-	{
-		return state == ButtonState.Ring;
-	}
-
-	public bool IsStoneState()
-	{
-		return state == ButtonState.Stone;
-	}
-
-	public bool IsEmptyState()
-	{
-		return state == ButtonState.Empty;
-	}
 
 	public void OnMouseDown()
 	{
@@ -53,7 +45,7 @@ public class ButtonCell : MonoBehaviour
 		if (onDown)
 		{
 			GameManager.Instance.OnClickButton(this);
-			if (IsEmptyState())
+			if (isEmptyState)
 			{
 				ringTrans.SetActive(true);
 			}
@@ -84,6 +76,6 @@ public class ButtonCell : MonoBehaviour
 
 	public void Update()
 	{
-		ringTrans.SetActive(IsSelectedState());
+		ringTrans.SetActive(isSelectedState);
 	}
 }

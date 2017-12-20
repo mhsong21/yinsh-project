@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
 		switch (state)
 		{
 		case GameState.SetupState:
-			if (cell.IsRingState() || cell.IsStoneState())
+			if (cell.isRingState || cell.isStoneState)
 				return;
 
 			if (lastClicked == cell)
@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour
 			}
 			else 
 			{
-				if (lastClicked != null && lastClicked.IsSelectedState())
+				if (lastClicked != null && lastClicked.isSelectedState)
 					lastClicked.state = ButtonState.Empty;
 				
 				cell.state = ButtonState.Selected;
@@ -83,10 +83,10 @@ public class GameManager : MonoBehaviour
 			lastClicked = cell;
 			break;
 		case GameState.ProcessState:
-			if (cell.IsStoneState())
+			if (cell.isStoneState)
 				return;
 
-			if (cell.IsEmptyState() && lastClicked != null && lastClicked.IsRingState())
+			if (cell.isEmptyState && lastClicked != null && lastClicked.isRingState)
 			{
 				Player nextPlayer;
 				if (currentPlayer == player1)
@@ -100,21 +100,21 @@ public class GameManager : MonoBehaviour
 
 				mapManager.MoveRingToCell(lastClicked, cell);
 				currentPlayer = nextPlayer;
-				cell.ring.SetState(RingState.Idle);
+				cell.ring.state = RingState.Idle;
 				lastClicked = null;
 			} 
-			else if (cell.IsRingState())
+			else if (cell.isRingState)
 			{
 				if (lastClicked == cell)
 				{
-					lastClicked.ring.SetState(RingState.Idle);
+					lastClicked.ring.state = RingState.Idle;
 					lastClicked = null;
 					return;
 				}
-				if (lastClicked != null && lastClicked.IsRingState() && lastClicked.ring.IsSelected())
-					lastClicked.ring.SetState(RingState.Idle);
+				if (lastClicked != null && lastClicked.isRingState && lastClicked.ring.isSelected)
+					lastClicked.ring.state = RingState.Idle;
 
-				cell.ring.SetState(RingState.Selected);
+				cell.ring.state = RingState.Selected;
 			}
 			lastClicked = cell;
 			break;

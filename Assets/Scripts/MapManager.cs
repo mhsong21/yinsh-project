@@ -48,8 +48,8 @@ public class MapManager : MonoBehaviour
 		ring.transform.parent = cell.transform;
 		ring.transform.localPosition = ringLocalPosition;
 		ring.transform.localScale = ringLocalScale;
-		ring.x = cell.x;
-		ring.y = cell.y;
+//		ring.x = cell.X;
+//		ring.y = cell.y;
 
 		cell.GetComponent<ButtonCell>().ring = ring;
 	}
@@ -65,7 +65,7 @@ public class MapManager : MonoBehaviour
 		ring.transform.parent = next.transform;
 		ring.transform.localPosition = ringLocalPosition;
 		ring.state = RingState.Idle;
-		ring.x = next.x;
-		ring.y = next.y;
+//		ring.x = next.x;
+//		ring.y = next.y;
 	}
 }

@@ -10,30 +10,25 @@ public enum RingState
 
 public class Ring : MonoBehaviour 
 {
-	public int x;
-	public int y;
-	public RingState state = RingState.Idle;
-
-	public bool IsSelected()
-	{
-		return state == RingState.Selected;
-	}
-
-	public bool IsIdle()
-	{
-		return state == RingState.Idle;
-	}
-
-	public void SetState(RingState newState)
-	{
-		this.state = newState;
-		if (newState == RingState.Idle)
+	// public accessors
+	public RingState state {
+		get { return _state; }
+		set
 		{
-			transform.localScale = new Vector3(2f, 2f, 2f);
+			_state = value;
+			if (value == RingState.Idle)
+			{
+				transform.localScale = new Vector3(2f, 2f, 2f);
+			}
+			else
+			{
+				transform.localScale = new Vector3(2.2f, 2.2f, 2.2f);
+			}
 		}
-		else
-		{
-			transform.localScale = new Vector3(2.2f, 2.2f, 2.2f);
-		}
-	} 
+	}
+	public bool isIdle { get { return _state == RingState.Idle; } }
+	public bool isSelected { get { return _state == RingState.Selected; } }
+
+	// private fields
+	private RingState _state = RingState.Idle;
 }
