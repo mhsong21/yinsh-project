@@ -32,7 +32,7 @@ public class MapManager : MonoBehaviour
         }
     }
 
-	public GameObject GetButtonObject(int x,int y)
+	public GameObject GetButtonObject(int x, int y)
 	{
 		int bottomOffset = bottomOffsetList[x];
 		return spotTable[x][y - bottomOffset];

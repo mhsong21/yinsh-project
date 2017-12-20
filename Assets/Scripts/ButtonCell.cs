@@ -16,7 +16,7 @@ public class ButtonCell : MonoBehaviour
 	public Animator animator;
 	public GameObject ringTrans;
 	public ButtonState state = ButtonState.Empty;
-	public int x;
+	public int x { get; set; }
 	public int y;
 
 	[HideInInspector] public Ring ring;

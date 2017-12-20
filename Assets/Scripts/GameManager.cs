@@ -80,12 +80,13 @@ public class GameManager : MonoBehaviour
 				
 				cell.state = ButtonState.Selected;
 			}
+			lastClicked = cell;
 			break;
 		case GameState.ProcessState:
 			if (cell.IsStoneState())
 				return;
 
-			if (lastClicked != null && lastClicked.IsRingState() && cell.IsEmptyState())
+			if (cell.IsEmptyState() && lastClicked != null && lastClicked.IsRingState())
 			{
 				Player nextPlayer;
 				if (currentPlayer == player1)
@@ -99,18 +100,25 @@ public class GameManager : MonoBehaviour
 
 				mapManager.MoveRingToCell(lastClicked, cell);
 				currentPlayer = nextPlayer;
+				cell.ring.SetState(RingState.Idle);
 				lastClicked = null;
 			} 
 			else if (cell.IsRingState())
 			{
+				if (lastClicked == cell)
+				{
+					lastClicked.ring.SetState(RingState.Idle);
+					lastClicked = null;
+					return;
+				}
 				if (lastClicked != null && lastClicked.IsRingState() && lastClicked.ring.IsSelected())
 					lastClicked.ring.SetState(RingState.Idle);
 
 				cell.ring.SetState(RingState.Selected);
 			}
+			lastClicked = cell;
 			break;
 		}
-		lastClicked = cell;
 
 		SetupStatusText();
 	}
