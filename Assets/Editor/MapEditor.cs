@@ -41,7 +41,7 @@ public class MapEditor : EditorWindow
         target.spotTable.Clear();
         for (int colIndex = 0; colIndex < totalSpot; ++colIndex)
         {
-            var go = new GameObject("Anchor_" + (char)((char)'a' + colIndex));
+            var go = new GameObject("Anchor " + (char)((char)'A' + colIndex));
             go.transform.SetParent(target.transform);
 
             int bottomOffset = bottomOffsetList[colIndex];
@@ -50,7 +50,7 @@ public class MapEditor : EditorWindow
             for (int rowIndex = bottomOffset; rowIndex < totalSpot - topOffset; ++rowIndex)
             {
                 var button = Instantiate(buttonPrefab) as GameObject;
-                button.name = "Button_" + (char)((char)'a' + colIndex) + "_" + (rowIndex + 1);
+                button.name = "Button (" + (char)((char)'A' + colIndex) + ", " + (rowIndex + 1) + ")";
                 button.transform.SetParent(go.transform, false);
                 button.transform.localPosition = CalcButtonPosition(colIndex, rowIndex);
                 button.GetComponent<ButtonCell>().x = colIndex;
