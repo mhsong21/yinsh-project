@@ -9,6 +9,7 @@ public class MapManager : MonoBehaviour
 	public Vector3 ringLocalScale = new Vector3(2f, 2f, 2f);
 
     private List<int> bottomOffsetList = new List<int>(){1, 0, 0, 0, 0, 1, 1, 2, 3, 4, 6};
+    private int[,] delta = new int[,]{ { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 }, { 1, 1 }, { -1, -1 } };
 
     public void EnableAllButtons()
     {
@@ -34,8 +35,16 @@ public class MapManager : MonoBehaviour
 
 	public GameObject GetButtonObject(int x, int y)
 	{
-		int bottomOffset = bottomOffsetList[x];
-		return spotTable[x][y - bottomOffset];
+        try 
+        {
+		    int bottomOffset = bottomOffsetList[x];
+            var cell = spotTable[x][y - bottomOffset];
+            return cell;
+        }
+        catch
+        {
+            return null;
+        }
 	}
 
     public ButtonCell GetButtonCell(int x, int y)
@@ -68,4 +77,32 @@ public class MapManager : MonoBehaviour
 //		ring.x = next.x;
 //		ring.y = next.y;
 	}
+
+    public void ActivataePossibleButtons(ButtonCell cell)
+    {
+        for (int i = 0; i < delta.GetLength(0); i++)
+        {
+            int dx = delta[i, 0];
+            int dy = delta[i, 1];
+            bool isStoneAppeared = false;
+
+            for (int x = cell.x + dx, y = cell.y + dy; GetButtonObject(x, y) != null; x += dx, y += dy)
+            {
+                ButtonCell target = GetButtonCell(x, y);
+                if (target.isEmptyState)
+                {
+                    target.EnableButton();
+                    if (isStoneAppeared) { break; }
+                }
+                else if (target.isStoneState)
+                {
+                    isStoneAppeared = true;
+                }
+                else
+                {
+                    break;
+                }
+            }
+        }
+    }
 }
