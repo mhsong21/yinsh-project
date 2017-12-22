@@ -6,17 +6,17 @@ using UnityEngine;
 [Serializable]
 public class SerializableGameObjectList
 {
-    public List<GameObject> rawData = new List<GameObject>();
+	public List<GameObject> rawData = new List<GameObject>();
 
-    public GameObject this[int i]
-    {
-        get
-        {
-            return rawData[i];
-        }
-        set
-        {
-            rawData[i] = value;
-        }
-    }
+	public GameObject this [int i]
+	{
+		get
+		{
+			return rawData[i];
+		}
+		set
+		{
+			rawData[i] = value;
+		}
+	}
 }

@@ -36,92 +36,92 @@ public class GameManager : MonoBehaviour
 	{
 		var x = cell.x;
 		var y = cell.y;
-        var z = cell.z;
+		var z = cell.z;
 		Debug.Log (x + ", " + y + ", " + z + " button pressed!");
 
 		switch (state)
 		{
-            case GameState.SetupState:
-                if (cell.isRingState || cell.isStoneState)
-                    return;
+			case GameState.SetupState:
+				if (cell.isRingState || cell.isStoneState)
+					return;
 
-                if (lastClicked == cell)
-                {
-                    GameObject obj;
-                    Player nextPlayer;
+				if (lastClicked == cell)
+				{
+					GameObject obj;
+					Player nextPlayer;
 
-                    cell.state = ButtonState.Ring;
-                    if (currentPlayer == player1)
-                    {
-                        obj = objectPool.GetWhiteRing();
-                        nextPlayer = player2;
-                    }
-                    else
-                    {
-                        obj = objectPool.GetBlackRing();
-                        nextPlayer = player1;
-                    }
+					cell.state = ButtonState.Ring;
+					if (currentPlayer == player1)
+					{
+						obj = objectPool.GetWhiteRing();
+						nextPlayer = player2;
+					}
+					else
+					{
+						obj = objectPool.GetBlackRing();
+						nextPlayer = player1;
+					}
 
-                    obj.SetActive(true);
-                    Ring ring = obj.GetComponent<Ring>();
-                    currentPlayer.AddRing(ring);
-                    mapManager.AddRingToCell(ring, cell);
-                    currentPlayer = nextPlayer;
+					obj.SetActive(true);
+					Ring ring = obj.GetComponent<Ring>();
+					currentPlayer.AddRing(ring);
+					mapManager.AddRingToCell(ring, cell);
+					currentPlayer = nextPlayer;
 
-                    if (player1.ringCount == 5 && player2.ringCount == 5)
-                    {
-                        state = GameState.ProcessState;
-                        lastClicked = null;
-                    }
-                }
-                else
-                {
-                    if (lastClicked != null && lastClicked.isSelectedState)
-                        lastClicked.state = ButtonState.Empty;
+					if (player1.ringCount == 5 && player2.ringCount == 5)
+					{
+						state = GameState.ProcessState;
+						lastClicked = null;
+					}
+				}
+				else
+				{
+					if (lastClicked != null && lastClicked.isSelectedState)
+						lastClicked.state = ButtonState.Empty;
 				
-                    cell.state = ButtonState.Selected;
-                }
-                lastClicked = cell;
-                break;
-            case GameState.ProcessState:
-                if (cell.isStoneState)
-                    return;
+					cell.state = ButtonState.Selected;
+				}
+				lastClicked = cell;
+				break;
+			case GameState.ProcessState:
+				if (cell.isStoneState)
+					return;
 
-                if (cell.isEmptyState && lastClicked != null && lastClicked.isRingState)
-                {
-                    Player nextPlayer;
-                    if (currentPlayer == player1)
-                    {
-                        nextPlayer = player2;
-                    }
-                    else
-                    {
-                        nextPlayer = player1;
-                    }
+				if (cell.isEmptyState && lastClicked != null && lastClicked.isRingState)
+				{
+					Player nextPlayer;
+					if (currentPlayer == player1)
+					{
+						nextPlayer = player2;
+					}
+					else
+					{
+						nextPlayer = player1;
+					}
 
-                    mapManager.MoveRingToCell(lastClicked, cell);
-                    currentPlayer = nextPlayer;
-                    cell.ring.state = RingState.Idle;
-                    lastClicked = null;
-                }
-                else if (cell.isRingState)
-                {
-                    if (lastClicked == cell)
-                    {
-                        lastClicked.ring.state = RingState.Idle;
-                        lastClicked = null;
-                        return;
-                    }
-                    if (lastClicked != null && lastClicked.isRingState && lastClicked.ring.isSelected)
-                        lastClicked.ring.state = RingState.Idle;
+					mapManager.MoveRingToCell(lastClicked, cell);
+					currentPlayer = nextPlayer;
+					cell.ring.state = RingState.Idle;
+					lastClicked = null;
+				}
+				else if (cell.isRingState)
+				{
+					if (lastClicked == cell)
+					{
+						lastClicked.ring.state = RingState.Idle;
+						lastClicked = null;
+						return;
+					}
+					if (lastClicked != null && lastClicked.isRingState && lastClicked.ring.isSelected)
+						lastClicked.ring.state = RingState.Idle;
 
-                    cell.ring.state = RingState.Selected;
-                }
-                lastClicked = cell;
+					cell.ring.state = RingState.Selected;
+				}
+				lastClicked = cell;
 
-                if (cell.isRingState)
-                    mapManager.ActivataePossibleButtons(cell);
-			break;
+				if (cell.isRingState)
+					mapManager.ActivataePossibleButtons(cell);
+				break;
 		}
 
 		SetupStatusText();

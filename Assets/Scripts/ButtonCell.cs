@@ -5,10 +5,10 @@ using UnityEngine.EventSystems;
 
 public enum ButtonState
 {
-    Selected,
+	Selected,
 	Ring,
-    Stone,
-    Empty
+	Stone,
+	Empty
 };
 
 public class ButtonCell : MonoBehaviour
@@ -26,12 +26,12 @@ public class ButtonCell : MonoBehaviour
 	public Ring ring { get { return _ring; } set { _ring = value; } }
 	public int x { get { return _x; } set { _x = value; } }
 	public int y { get { return _y; } set { _y = value; } }
-    public int z { get { return _y - _x + 5; } }
+	public int z { get { return _y - _x + 5; } }
 
 	// private fields
 	private ButtonState _state = ButtonState.Empty;
 	private Ring _ring;
-    private int _x;
+	private int _x;
 	private int _y;
 
 	private bool onDown = false;
@@ -57,7 +57,7 @@ public class ButtonCell : MonoBehaviour
 
 	public void EnableButton()
 	{
-        Debug.Log(_x + ", " + _y + " is enabled");
+		Debug.Log(_x + ", " + _y + " is enabled");
 	}
 
 	public void DisableButton()
@@ -65,10 +65,10 @@ public class ButtonCell : MonoBehaviour
 
 	}
 
-    public void FlipStone()
-    {
+	public void FlipStone()
+	{
 
-    }
+	}
 
 	public void OnMouseEnter()
 	{
