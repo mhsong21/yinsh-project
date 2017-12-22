@@ -36,8 +36,8 @@ public class GameManager : MonoBehaviour
 	{
 		var x = cell.x;
 		var y = cell.y;
-        var k = cell.k;
-		Debug.Log (x + ", " + y + ", " + k + " button pressed!");
+        var z = cell.z;
+		Debug.Log (x + ", " + y + ", " + z + " button pressed!");
 
 		switch (state)
 		{

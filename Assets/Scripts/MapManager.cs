@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -103,6 +104,25 @@ public class MapManager : MonoBehaviour
                     break;
                 }
             }
+        }
+    }
+
+    public void FilpStones(ButtonCell from, ButtonCell to)
+    {
+        int x = Math.Min(from.x, to.x);
+        int y = Math.Min(from.y, to.y);
+        int endX = Math.Max(from.x, to.x);
+        int endY = Math.Max(from.y, to.y);
+        int dx = 0, dy = 0;
+        if (from.x == to.x) { dx = 0; dy = 1; }
+        if (from.y == to.y) { dx = 1; dy = 0; }
+        if (from.z == to.z) { dx = 1; dy = 1; }
+
+        for (; x < endX || y < endY; x += dx, y += dy)
+        {
+            ButtonCell target = GetButtonCell(x, y);
+            if (target.isStoneState)
+                target.FlipStone();
         }
     }
 }
