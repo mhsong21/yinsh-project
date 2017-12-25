@@ -340,9 +340,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 95438048114699938}
   ringTrans: {fileID: 1296155635613482}
-  buttonState: 3
-  x: 0
-  y: 0
+  stone: {fileID: 1743365059923726}
+  _x: 0
+  _y: 0
 --- !u!135 &135159587515574428
 SphereCollider:
   m_ObjectHideFlags: 1

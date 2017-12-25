@@ -68,18 +68,19 @@ public class MapManager : MonoBehaviour
 	{
 		Ring ring = prev.ring;
 		prev.ring = null;
-		prev.state = ButtonState.Empty;
+		prev.state = ButtonState.Stone;
 		next.ring = ring;
 		next.state = ButtonState.Ring;
 
 		ring.transform.parent = next.transform;
 		ring.transform.localPosition = ringLocalPosition;
 		ring.state = RingState.Idle;
-//		ring.x = next.x;
-//		ring.y = next.y;
+
+		// Flip
+		FlipStones(prev, next);
 	}
 
-	public void ActivataePossibleButtons(ButtonCell cell)
+	public void ActivatePossibleButtons(ButtonCell cell)
 	{
 		for (int i = 0; i < delta.GetLength(0); i++)
 		{
@@ -93,10 +94,7 @@ public class MapManager : MonoBehaviour
 				if (target.isEmptyState)
 				{
 					target.EnableButton();
-					if (isStoneAppeared)
-					{
-						break;
-					}
+					if (isStoneAppeared) break;
 				}
 				else if (target.isStoneState)
 				{
@@ -110,28 +108,20 @@ public class MapManager : MonoBehaviour
 		}
 	}
 
-	public void FilpStones(ButtonCell from, ButtonCell to)
+	public void FlipStones(ButtonCell from, ButtonCell to)
 	{
 		int x = Math.Min(from.x, to.x);
 		int y = Math.Min(from.y, to.y);
 		int endX = Math.Max(from.x, to.x);
 		int endY = Math.Max(from.y, to.y);
-		int dx = 0, dy = 0;
-		if (from.x == to.x)
-		{
-			dx = 0;
-			dy = 1;
-		}
-		if (from.y == to.y)
-		{
-			dx = 1;
-			dy = 0;
-		}
-		if (from.z == to.z)
-		{
-			dx = 1;
-			dy = 1;
-		}
+		int dx, dy;
+		if (from.x == to.x) { dx = 0; dy = 1; }
+		else if (from.y == to.y) { dx = 1; dy = 0; }
+		else { dx = 1; dy = 1; }
+
+		// to ignore start & end point
+		x += dx; y += dy;
+		endX -= dx; endY -= dy;
 
 		for (; x < endX || y < endY; x += dx, y += dy)
 		{
@@ -139,5 +129,39 @@ public class MapManager : MonoBehaviour
 			if (target.isStoneState)
 				target.FlipStone();
 		}
+	}
+
+	public bool checkFiveStones()
+	{
+		for (int p = 0; p < spotTable.Count; p++)
+		{
+			for (int q = 0; q < spotTable[p].rawData.Count; q++)
+			{
+				ButtonCell cell = GetButtonCell(p, q);
+				if (!cell.isStoneState)
+					continue;
+
+				for (int i = 0; i < delta.GetLength(0); i++)
+				{
+					int dx = delta[i, 0];
+					int dy = delta[i, 1];
+					int count = 0;
+
+					for (int x = cell.x + dx, y = cell.y + dy; GetButtonObject(x, y) != null && count < 5; x += dx, y += dy)
+					{
+						ButtonCell target = GetButtonCell(x, y);
+						if (!target.isStoneState)
+							break;
+
+						// if same color
+						count ++;
+					}
+
+					if (count == 5)
+						return true;
+				}
+			}
+		}
+		return false;
 	}
 }

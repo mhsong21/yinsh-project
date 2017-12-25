@@ -120,7 +120,7 @@ public class GameManager : MonoBehaviour
 				lastClicked = cell;
 
 				if (cell.isRingState)
-					mapManager.ActivataePossibleButtons(cell);
+					mapManager.ActivatePossibleButtons(cell);
 				break;
 		}
 

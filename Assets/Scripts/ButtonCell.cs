@@ -15,9 +15,32 @@ public class ButtonCell : MonoBehaviour
 {
 	public Animator animator;
 	public GameObject ringTrans;
+	public GameObject stone;
 
 	// public accessors
-	public ButtonState state { get { return _state; } set { _state = value; } }
+	public ButtonState state { 
+		get { return _state; } 
+		set 
+		{ 
+			_state = value;
+			switch (value)
+			{
+				case ButtonState.Ring:
+					ringTrans.SetActive(false);
+					break;
+				case ButtonState.Selected:
+					ringTrans.SetActive(true);
+					break;
+				case ButtonState.Stone:
+					stone.SetActive(true);
+					break;
+				case ButtonState.Empty:
+					ringTrans.SetActive(false);
+					stone.SetActive(false);
+					break;
+			}
+		} 
+	}
 	public bool isSelectedState { get { return _state == ButtonState.Selected; } }
 	public bool isRingState { get { return _state == ButtonState.Ring; } }
 	public bool isStoneState { get { return _state == ButtonState.Stone; } }
@@ -70,18 +93,18 @@ public class ButtonCell : MonoBehaviour
 
 	}
 
-	public void OnMouseEnter()
-	{
-		ringTrans.SetActive(true);
-	}
+//	public void OnMouseEnter()
+//	{
+//		ringTrans.SetActive(true);
+//	}
+//
+//	public void OnMouseExit()
+//	{
+//		ringTrans.SetActive(false);
+//	}
 
-	public void OnMouseExit()
-	{
-		ringTrans.SetActive(false);
-	}
-
-	public void Update()
-	{
-		ringTrans.SetActive(isSelectedState);
-	}
+//	public void Update()
+//	{
+//		ringTrans.SetActive(isSelectedState);
+//	}
 }
