@@ -31,8 +31,8 @@ public class ButtonCell : MonoBehaviour
 	// private fields
 	private ButtonState _state = ButtonState.Empty;
 	private Ring _ring;
-	private int _x;
-	private int _y;
+	[SerializeField] private int _x;
+	[SerializeField] private int _y;
 
 	private bool onDown = false;
 
