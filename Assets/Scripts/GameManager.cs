@@ -89,10 +89,8 @@ public class GameManager : MonoBehaviour
 
 				if (cell.isEmptyState && lastClicked != null && lastClicked.isRingState)
 				{
-					Player nextPlayer = currentPlayer == player1 ? player2 : player1;
-
-					mapManager.MoveRingToCell(lastClicked, cell);
-					currentPlayer = nextPlayer;
+					mapManager.MoveRingToCell(lastClicked, cell, (currentPlayer == player1));
+					currentPlayer = currentPlayer == player1 ? player2 : player1;
 					cell.ring.state = RingState.Idle;
 					lastClicked = null;
 					break;

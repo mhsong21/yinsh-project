@@ -64,10 +64,11 @@ public class MapManager : MonoBehaviour
 		cell.GetComponent<ButtonCell>().ring = ring;
 	}
 
-	public void MoveRingToCell(ButtonCell prev, ButtonCell next)
+	public void MoveRingToCell(ButtonCell prev, ButtonCell next, bool isWhite)
 	{
 		Ring ring = prev.ring;
 		prev.ring = null;
+		prev.isWhite = isWhite;
 		prev.state = ButtonState.Stone;
 		next.ring = ring;
 		next.state = ButtonState.Ring;
@@ -114,6 +115,7 @@ public class MapManager : MonoBehaviour
 		int y = Math.Min(from.y, to.y);
 		int endX = Math.Max(from.x, to.x);
 		int endY = Math.Max(from.y, to.y);
+
 		int dx, dy;
 		if (from.x == to.x) { dx = 0; dy = 1; }
 		else if (from.y == to.y) { dx = 1; dy = 0; }
@@ -121,13 +123,12 @@ public class MapManager : MonoBehaviour
 
 		// to ignore start & end point
 		x += dx; y += dy;
-		endX -= dx; endY -= dy;
 
-		for (; x < endX || y < endY; x += dx, y += dy)
+		for (; x != endX || y != endY; x += dx, y += dy)
 		{
+			Debug.Log(x + " " + y + "is flipped");
 			ButtonCell target = GetButtonCell(x, y);
-			if (target.isStoneState)
-				target.FlipStone();
+			if (target.isStoneState) target.FlipStone();
 		}
 	}
 

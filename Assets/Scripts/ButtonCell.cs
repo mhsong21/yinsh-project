@@ -16,6 +16,9 @@ public class ButtonCell : MonoBehaviour
 	public Animator animator;
 	public GameObject ringTrans;
 	public GameObject stone;
+	private readonly string IS_WHITE = "IsWhite";
+	private readonly string STONE_ACTIVE = "Stone Active";
+	private readonly string STONE_FLIP = "Stone Flip";
 
 	// public accessors
 	public ButtonState state { 
@@ -32,6 +35,7 @@ public class ButtonCell : MonoBehaviour
 					ringTrans.SetActive(true);
 					break;
 				case ButtonState.Stone:
+					animator.SetTrigger(STONE_ACTIVE);
 					stone.SetActive(true);
 					break;
 				case ButtonState.Empty:
@@ -40,6 +44,15 @@ public class ButtonCell : MonoBehaviour
 					break;
 			}
 		} 
+	}
+	public bool isWhite
+	{
+		get { return _white; }
+		set
+		{
+			_white = value;
+			animator.SetBool(IS_WHITE, _white);
+		}
 	}
 	public bool isSelectedState { get { return _state == ButtonState.Selected; } }
 	public bool isRingState { get { return _state == ButtonState.Ring; } }
@@ -56,6 +69,7 @@ public class ButtonCell : MonoBehaviour
 	private Ring _ring;
 	[SerializeField] private int _x;
 	[SerializeField] private int _y;
+	[SerializeField] private bool _white = false;
 
 	private bool onDown = false;
 
@@ -80,7 +94,7 @@ public class ButtonCell : MonoBehaviour
 
 	public void EnableButton()
 	{
-		Debug.Log(_x + ", " + _y + " is enabled");
+//		Debug.Log(_x + ", " + _y + " is enabled");
 	}
 
 	public void DisableButton()
@@ -90,7 +104,8 @@ public class ButtonCell : MonoBehaviour
 
 	public void FlipStone()
 	{
-
+		isWhite = !isWhite;
+		animator.SetTrigger(STONE_FLIP);
 	}
 
 //	public void OnMouseEnter()
