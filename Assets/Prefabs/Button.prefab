@@ -302,7 +302,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1529764544196242}
-  m_Mesh: {fileID: 4300000, guid: a5db587fbc02a7f4a90319552806c987, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 89da0bdc918de407f9d1a6f083f68fd1, type: 3}
 --- !u!33 &33710639652574500
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -340,7 +340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 95438048114699938}
   ringTrans: {fileID: 1296155635613482}
-  stone: {fileID: 0}
+  stone: {fileID: 1054768042659852}
   _x: 0
   _y: 0
 --- !u!135 &135159587515574428
