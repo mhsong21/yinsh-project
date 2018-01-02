@@ -89,20 +89,13 @@ public class GameManager : MonoBehaviour
 
 				if (cell.isEmptyState && lastClicked != null && lastClicked.isRingState)
 				{
-					Player nextPlayer;
-					if (currentPlayer == player1)
-					{
-						nextPlayer = player2;
-					}
-					else
-					{
-						nextPlayer = player1;
-					}
+					Player nextPlayer = currentPlayer == player1 ? player2 : player1;
 
 					mapManager.MoveRingToCell(lastClicked, cell);
 					currentPlayer = nextPlayer;
 					cell.ring.state = RingState.Idle;
 					lastClicked = null;
+					break;
 				}
 				else if (cell.isRingState)
 				{
@@ -110,7 +103,7 @@ public class GameManager : MonoBehaviour
 					{
 						lastClicked.ring.state = RingState.Idle;
 						lastClicked = null;
-						return;
+						break;
 					}
 					if (lastClicked != null && lastClicked.isRingState && lastClicked.ring.isSelected)
 						lastClicked.ring.state = RingState.Idle;

@@ -69,10 +69,10 @@ public class ButtonCell : MonoBehaviour
 		if (onDown)
 		{
 			GameManager.Instance.OnClickButton(this);
-			if (isEmptyState)
-			{
-				ringTrans.SetActive(true);
-			}
+//			if (isEmptyState)
+//			{
+//				ringTrans.SetActive(true);
+//			}
 
 			onDown = false;
 		}
