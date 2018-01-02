@@ -267,10 +267,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2569525}
   ringTrans: {fileID: 1800861687}
-  state: 3
-  x: 9
-  y: 5
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &2569525
 Animator:
   serializedVersion: 3
@@ -347,10 +346,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 11537277}
   ringTrans: {fileID: 1482608730}
-  state: 3
-  x: 6
-  y: 4
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &11537277
 Animator:
   serializedVersion: 3
@@ -542,10 +540,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 19928933}
   ringTrans: {fileID: 1870094576}
-  state: 3
-  x: 8
-  y: 4
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &19928933
 Animator:
   serializedVersion: 3
@@ -691,10 +688,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 27620997}
   ringTrans: {fileID: 1153881755}
-  state: 3
-  x: 8
-  y: 6
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &27620997
 Animator:
   serializedVersion: 3
@@ -1635,10 +1631,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 110818441}
   ringTrans: {fileID: 892512824}
-  state: 3
-  x: 5
-  y: 5
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &110818441
 Animator:
   serializedVersion: 3
@@ -1773,10 +1768,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 126364690}
   ringTrans: {fileID: 1633318955}
-  state: 3
-  x: 8
-  y: 8
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &126364690
 Animator:
   serializedVersion: 3
@@ -1922,10 +1916,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 136248358}
   ringTrans: {fileID: 873836758}
-  state: 3
-  x: 7
-  y: 5
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &136248358
 Animator:
   serializedVersion: 3
@@ -2307,10 +2300,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 152240672}
   ringTrans: {fileID: 1635999056}
-  state: 3
-  x: 9
-  y: 7
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &152240672
 Animator:
   serializedVersion: 3
@@ -2527,10 +2519,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 176741610}
   ringTrans: {fileID: 340939965}
-  state: 3
-  x: 5
-  y: 4
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &176741610
 Animator:
   serializedVersion: 3
@@ -2959,10 +2950,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 221800011}
   ringTrans: {fileID: 620377623}
-  state: 3
-  x: 1
-  y: 4
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &221800011
 Animator:
   serializedVersion: 3
@@ -3137,10 +3127,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 227058623}
   ringTrans: {fileID: 1574321478}
-  state: 3
-  x: 10
-  y: 6
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &227058623
 Animator:
   serializedVersion: 3
@@ -3424,10 +3413,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 233128825}
   ringTrans: {fileID: 1364337655}
-  state: 3
-  x: 7
-  y: 6
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &233128825
 Animator:
   serializedVersion: 3
@@ -3533,10 +3521,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 241458577}
   ringTrans: {fileID: 431245447}
-  state: 3
-  x: 4
-  y: 3
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &241458577
 Animator:
   serializedVersion: 3
@@ -3994,10 +3981,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 265984053}
   ringTrans: {fileID: 2024333012}
-  state: 3
-  x: 3
-  y: 7
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &265984053
 Animator:
   serializedVersion: 3
@@ -4103,10 +4089,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 271584975}
   ringTrans: {fileID: 537105920}
-  state: 3
-  x: 9
-  y: 9
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &271584975
 Animator:
   serializedVersion: 3
@@ -4183,10 +4168,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 275851174}
   ringTrans: {fileID: 308396941}
-  state: 3
-  x: 9
-  y: 6
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &275851174
 Animator:
   serializedVersion: 3
@@ -4263,10 +4247,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 285774211}
   ringTrans: {fileID: 1331492159}
-  state: 3
-  x: 3
-  y: 3
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &285774211
 Animator:
   serializedVersion: 3
@@ -4412,10 +4395,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 307747552}
   ringTrans: {fileID: 1096436465}
-  state: 3
-  x: 3
-  y: 0
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &307747552
 Animator:
   serializedVersion: 3
@@ -4778,10 +4760,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 323049303}
   ringTrans: {fileID: 523480551}
-  state: 3
-  x: 9
-  y: 10
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &323049303
 Animator:
   serializedVersion: 3
@@ -4864,10 +4845,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 337315125}
   ringTrans: {fileID: 2062642197}
-  state: 3
-  x: 5
-  y: 1
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &337315125
 Animator:
   serializedVersion: 3
@@ -5140,10 +5120,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 356370243}
   ringTrans: {fileID: 237899514}
-  state: 3
-  x: 0
-  y: 3
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &356370243
 Animator:
   serializedVersion: 3
@@ -5427,10 +5406,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 381966992}
   ringTrans: {fileID: 836987483}
-  state: 3
-  x: 6
-  y: 3
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &381966992
 Animator:
   serializedVersion: 3
@@ -5761,10 +5739,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 403650179}
   ringTrans: {fileID: 388889460}
-  state: 3
-  x: 4
-  y: 8
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &403650179
 Animator:
   serializedVersion: 3
@@ -5910,10 +5887,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 411737485}
   ringTrans: {fileID: 1165143582}
-  state: 3
-  x: 4
-  y: 1
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &411737485
 Animator:
   serializedVersion: 3
@@ -5990,10 +5966,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 415306255}
   ringTrans: {fileID: 1020307899}
-  state: 3
-  x: 2
-  y: 4
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &415306255
 Animator:
   serializedVersion: 3
@@ -6816,10 +6791,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 461256941}
   ringTrans: {fileID: 1290131568}
-  state: 3
-  x: 0
-  y: 2
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &461256941
 Animator:
   serializedVersion: 3
@@ -7138,10 +7112,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 478753397}
   ringTrans: {fileID: 1640596514}
-  state: 3
-  x: 3
-  y: 1
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &478753397
 Animator:
   serializedVersion: 3
@@ -7218,10 +7191,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 484228146}
   ringTrans: {fileID: 319391669}
-  state: 3
-  x: 6
-  y: 9
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &484228146
 Animator:
   serializedVersion: 3
@@ -7534,10 +7506,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 501490328}
   ringTrans: {fileID: 951293773}
-  state: 3
-  x: 7
-  y: 2
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &501490328
 Animator:
   serializedVersion: 3
@@ -7741,10 +7712,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 522518001}
   ringTrans: {fileID: 1098095577}
-  state: 3
-  x: 5
-  y: 6
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &522518001
 Animator:
   serializedVersion: 3
@@ -8451,10 +8421,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 564593816}
   ringTrans: {fileID: 54181821}
-  state: 3
-  x: 1
-  y: 5
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &564593816
 Animator:
   serializedVersion: 3
@@ -9009,6 +8978,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ec35ae56ca414514a3b0d83547ad88a, type: 2}
   m_IsPrefabParent: 0
+--- !u!224 &629974649 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224059551005944118, guid: 8ec35ae56ca414514a3b0d83547ad88a,
+    type: 2}
+  m_PrefabInternal: {fileID: 629974648}
 --- !u!1 &639172592
 GameObject:
   m_ObjectHideFlags: 0
@@ -9431,10 +9405,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 669677361}
   ringTrans: {fileID: 588587219}
-  state: 3
-  x: 8
-  y: 10
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &669677361
 Animator:
   serializedVersion: 3
@@ -10153,10 +10126,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 702114889}
   ringTrans: {fileID: 1150232119}
-  state: 3
-  x: 7
-  y: 7
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &702114889
 Animator:
   serializedVersion: 3
@@ -10262,10 +10234,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 714612668}
   ringTrans: {fileID: 668945332}
-  state: 3
-  x: 4
-  y: 5
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &714612668
 Animator:
   serializedVersion: 3
@@ -11068,10 +11039,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 802973722}
   ringTrans: {fileID: 391399210}
-  state: 3
-  x: 2
-  y: 2
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &802973722
 Animator:
   serializedVersion: 3
@@ -11286,10 +11256,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 810343503}
   ringTrans: {fileID: 144361102}
-  state: 3
-  x: 6
-  y: 6
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &810343503
 Animator:
   serializedVersion: 3
@@ -12203,10 +12172,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 879542116}
   ringTrans: {fileID: 1994080761}
-  state: 3
-  x: 2
-  y: 5
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &879542116
 Animator:
   serializedVersion: 3
@@ -12784,10 +12752,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 907624587}
   ringTrans: {fileID: 101252940}
-  state: 3
-  x: 4
-  y: 6
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &907624587
 Animator:
   serializedVersion: 3
@@ -13002,10 +12969,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 922255376}
   ringTrans: {fileID: 428824693}
-  state: 3
-  x: 9
-  y: 4
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &922255376
 Animator:
   serializedVersion: 3
@@ -13583,10 +13549,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 969634493}
   ringTrans: {fileID: 1777396165}
-  state: 3
-  x: 1
-  y: 0
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &969634493
 Animator:
   serializedVersion: 3
@@ -13663,10 +13628,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 970616837}
   ringTrans: {fileID: 527906557}
-  state: 3
-  x: 1
-  y: 3
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &970616837
 Animator:
   serializedVersion: 3
@@ -13743,10 +13707,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 985473121}
   ringTrans: {fileID: 1726394197}
-  state: 3
-  x: 7
-  y: 3
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &985473121
 Animator:
   serializedVersion: 3
@@ -14831,10 +14794,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1044322377}
   ringTrans: {fileID: 209686073}
-  state: 3
-  x: 8
-  y: 9
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1044322377
 Animator:
   serializedVersion: 3
@@ -15614,10 +15576,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1077703327}
   ringTrans: {fileID: 1307672296}
-  state: 3
-  x: 6
-  y: 2
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1077703327
 Animator:
   serializedVersion: 3
@@ -15992,10 +15953,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1104082153}
   ringTrans: {fileID: 1935598210}
-  state: 3
-  x: 9
-  y: 8
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1104082153
 Animator:
   serializedVersion: 3
@@ -16660,10 +16620,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1131428506}
   ringTrans: {fileID: 1130170881}
-  state: 3
-  x: 3
-  y: 6
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1131428506
 Animator:
   serializedVersion: 3
@@ -17437,10 +17396,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1165291466}
   ringTrans: {fileID: 1614725698}
-  state: 3
-  x: 5
-  y: 2
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1165291466
 Animator:
   serializedVersion: 3
@@ -17546,10 +17504,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1199645316}
   ringTrans: {fileID: 2127541286}
-  state: 3
-  x: 2
-  y: 7
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1199645316
 Animator:
   serializedVersion: 3
@@ -17626,10 +17583,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1201580996}
   ringTrans: {fileID: 889979648}
-  state: 3
-  x: 8
-  y: 5
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1201580996
 Animator:
   serializedVersion: 3
@@ -17775,10 +17731,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1208624549}
   ringTrans: {fileID: 194758509}
-  state: 3
-  x: 5
-  y: 9
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1208624549
 Animator:
   serializedVersion: 3
@@ -17855,10 +17810,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1214317595}
   ringTrans: {fileID: 269259321}
-  state: 3
-  x: 6
-  y: 1
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1214317595
 Animator:
   serializedVersion: 3
@@ -18033,10 +17987,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1225272228}
   ringTrans: {fileID: 965464518}
-  state: 3
-  x: 6
-  y: 5
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1225272228
 Animator:
   serializedVersion: 3
@@ -18558,10 +18511,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1246270235}
   ringTrans: {fileID: 2009696726}
-  state: 3
-  x: 3
-  y: 4
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1246270235
 Animator:
   serializedVersion: 3
@@ -18709,10 +18661,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1262843998}
   ringTrans: {fileID: 1750563817}
-  state: 3
-  x: 4
-  y: 4
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1262843998
 Animator:
   serializedVersion: 3
@@ -19679,10 +19630,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1328601124}
   ringTrans: {fileID: 1819075662}
-  state: 3
-  x: 6
-  y: 8
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1328601124
 Animator:
   serializedVersion: 3
@@ -19759,10 +19709,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1330477757}
   ringTrans: {fileID: 1973953551}
-  state: 3
-  x: 7
-  y: 10
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1330477757
 Animator:
   serializedVersion: 3
@@ -20536,10 +20485,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1399766342}
   ringTrans: {fileID: 486018759}
-  state: 3
-  x: 3
-  y: 2
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1399766342
 Animator:
   serializedVersion: 3
@@ -20600,10 +20548,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1407952460}
   ringTrans: {fileID: 1336734846}
-  state: 3
-  x: 10
-  y: 9
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1407952460
 Animator:
   serializedVersion: 3
@@ -20696,10 +20643,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1408980989}
   ringTrans: {fileID: 856818048}
-  state: 3
-  x: 0
-  y: 4
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1408980989
 Animator:
   serializedVersion: 3
@@ -20776,10 +20722,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1414075347}
   ringTrans: {fileID: 310313843}
-  state: 3
-  x: 3
-  y: 8
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1414075347
 Animator:
   serializedVersion: 3
@@ -21474,10 +21419,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1451435367}
   ringTrans: {fileID: 1528333455}
-  state: 3
-  x: 3
-  y: 5
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1451435367
 Animator:
   serializedVersion: 3
@@ -21554,10 +21498,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1452979893}
   ringTrans: {fileID: 696183798}
-  state: 3
-  x: 2
-  y: 3
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1452979893
 Animator:
   serializedVersion: 3
@@ -21841,10 +21784,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1480099004}
   ringTrans: {fileID: 1843170108}
-  state: 3
-  x: 4
-  y: 9
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1480099004
 Animator:
   serializedVersion: 3
@@ -22048,10 +21990,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1491391556}
   ringTrans: {fileID: 529979768}
-  state: 3
-  x: 7
-  y: 4
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1491391556
 Animator:
   serializedVersion: 3
@@ -23228,10 +23169,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1596263334}
   ringTrans: {fileID: 1559486599}
-  state: 3
-  x: 5
-  y: 7
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1596263334
 Animator:
   serializedVersion: 3
@@ -23533,10 +23473,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1627156941}
   ringTrans: {fileID: 1818248381}
-  state: 3
-  x: 10
-  y: 8
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1627156941
 Animator:
   serializedVersion: 3
@@ -23729,10 +23668,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1638077347}
   ringTrans: {fileID: 1956551257}
-  state: 3
-  x: 2
-  y: 6
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1638077347
 Animator:
   serializedVersion: 3
@@ -24218,10 +24156,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1659122410}
   ringTrans: {fileID: 1225243619}
-  state: 3
-  x: 6
-  y: 10
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1659122410
 Animator:
   serializedVersion: 3
@@ -24955,10 +24892,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1710627324}
   ringTrans: {fileID: 1376764988}
-  state: 3
-  x: 8
-  y: 3
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1710627324
 Animator:
   serializedVersion: 3
@@ -25586,6 +25522,41 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1764514936}
   m_Mesh: {fileID: 4300000, guid: a5db587fbc02a7f4a90319552806c987, type: 3}
+--- !u!1 &1766716711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1766716712}
+  m_Layer: 5
+  m_Name: Player Profile
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1766716712
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1766716711}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1981736314}
+  - {fileID: 1967199445}
+  m_Father: {fileID: 629974649}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1767053905
 GameObject:
   m_ObjectHideFlags: 0
@@ -26381,10 +26352,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1844927976}
   ringTrans: {fileID: 1950504069}
-  state: 3
-  x: 1
-  y: 6
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1844927976
 Animator:
   serializedVersion: 3
@@ -26657,10 +26627,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1851474340}
   ringTrans: {fileID: 1630413495}
-  state: 3
-  x: 2
-  y: 0
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1851474340
 Animator:
   serializedVersion: 3
@@ -26806,10 +26775,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1855259303}
   ringTrans: {fileID: 1017668799}
-  state: 3
-  x: 1
-  y: 2
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1855259303
 Animator:
   serializedVersion: 3
@@ -27318,10 +27286,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1884569459}
   ringTrans: {fileID: 2123842487}
-  state: 3
-  x: 10
-  y: 7
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1884569459
 Animator:
   serializedVersion: 3
@@ -27536,10 +27503,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1921333698}
   ringTrans: {fileID: 1164372024}
-  state: 3
-  x: 4
-  y: 2
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1921333698
 Animator:
   serializedVersion: 3
@@ -28059,10 +28025,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1945940948}
   ringTrans: {fileID: 1019065944}
-  state: 3
-  x: 6
-  y: 7
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1945940948
 Animator:
   serializedVersion: 3
@@ -28571,10 +28536,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1963078679}
   ringTrans: {fileID: 1110132403}
-  state: 3
-  x: 8
-  y: 7
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1963078679
 Animator:
   serializedVersion: 3
@@ -28592,6 +28556,73 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!1 &1967199444
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1967199445}
+  - component: {fileID: 1967199447}
+  - component: {fileID: 1967199446}
+  m_Layer: 5
+  m_Name: Player2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1967199445
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1967199444}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1766716712}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 443, y: -153}
+  m_SizeDelta: {x: 180, y: 180}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1967199446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1967199444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -98529514, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Texture: {fileID: 2800000, guid: 6ad26e3ced4aec74a84bd88c09de701d, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1967199447
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1967199444}
 --- !u!1 &1967669204
 GameObject:
   m_ObjectHideFlags: 0
@@ -28857,6 +28888,73 @@ Transform:
   m_Father: {fileID: 1710627321}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1981736313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1981736314}
+  - component: {fileID: 1981736316}
+  - component: {fileID: 1981736315}
+  m_Layer: 5
+  m_Name: Player1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1981736314
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1981736313}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1766716712}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -443, y: -153}
+  m_SizeDelta: {x: 180, y: 180}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1981736315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1981736313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -98529514, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Texture: {fileID: 2800000, guid: 6ad26e3ced4aec74a84bd88c09de701d, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1981736316
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1981736313}
 --- !u!1 &1982240372
 GameObject:
   m_ObjectHideFlags: 0
@@ -29152,10 +29250,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1997486149}
   ringTrans: {fileID: 1717130360}
-  state: 3
-  x: 1
-  y: 1
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &1997486149
 Animator:
   serializedVersion: 3
@@ -29428,10 +29525,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2028839278}
   ringTrans: {fileID: 674948698}
-  state: 3
-  x: 4
-  y: 0
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &2028839278
 Animator:
   serializedVersion: 3
@@ -29646,10 +29742,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2034421641}
   ringTrans: {fileID: 1874674096}
-  state: 3
-  x: 0
-  y: 1
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &2034421641
 Animator:
   serializedVersion: 3
@@ -30002,10 +30097,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2062016619}
   ringTrans: {fileID: 1286803512}
-  state: 3
-  x: 4
-  y: 7
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &2062016619
 Animator:
   serializedVersion: 3
@@ -30249,10 +30343,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2083395098}
   ringTrans: {fileID: 1657752993}
-  state: 3
-  x: 5
-  y: 8
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &2083395098
 Animator:
   serializedVersion: 3
@@ -30329,10 +30422,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2083886054}
   ringTrans: {fileID: 1846882594}
-  state: 3
-  x: 7
-  y: 8
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &2083886054
 Animator:
   serializedVersion: 3
@@ -30616,10 +30708,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2101282879}
   ringTrans: {fileID: 93503540}
-  state: 3
-  x: 7
-  y: 9
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &2101282879
 Animator:
   serializedVersion: 3
@@ -30725,10 +30816,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2106048018}
   ringTrans: {fileID: 1685752069}
-  state: 3
-  x: 5
-  y: 3
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &2106048018
 Animator:
   serializedVersion: 3
@@ -30903,10 +30993,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2124039478}
   ringTrans: {fileID: 509645991}
-  state: 3
-  x: 2
-  y: 1
-  ring: {fileID: 0}
+  stone: {fileID: 0}
+  _x: 0
+  _y: 0
 --- !u!95 &2124039478
 Animator:
   serializedVersion: 3
