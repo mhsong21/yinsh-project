@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4510668119013600}
+  - component: {fileID: 114890960151230976}
   m_Layer: 0
   m_Name: WhiteRing5
   m_TagString: Untagged
@@ -109,3 +110,14 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1923454199589540}
   m_Mesh: {fileID: 4300000, guid: 6a047acf79b721e42a97902ff32ee8b4, type: 3}
+--- !u!114 &114890960151230976
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1916150596890630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed0492ebfea745a5bc4b85763a36f3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ObjectPool: MonoBehaviour
 {
-	public GameObject blackRingPrefab;
-	public GameObject whiteRingPrefab;
+	public GameObject[] blackRingPrefabs;
+	public GameObject[] whiteRingPrefabs;
 
 	List<GameObject> blackRings;
 	List<GameObject> whiteRings;
@@ -16,11 +16,11 @@ public class ObjectPool: MonoBehaviour
 		whiteRings = new List<GameObject> ();
 		for (int i = 0; i < 5; i++)
 		{
-			GameObject obj1 = (GameObject)Instantiate (blackRingPrefab);
+			GameObject obj1 = (GameObject)Instantiate (blackRingPrefabs[i]);
 			obj1.SetActive (false);
 			blackRings.Add (obj1);
 
-			GameObject obj2 = (GameObject)Instantiate (whiteRingPrefab);
+			GameObject obj2 = (GameObject)Instantiate (whiteRingPrefabs[i]);
 			obj2.SetActive (false);
 			whiteRings.Add (obj2);
 		}
