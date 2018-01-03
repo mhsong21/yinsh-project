@@ -11,6 +11,7 @@ public enum RingState
 public class Ring : MonoBehaviour 
 {
 	// public accessors
+	public GameObject highLightObj;
 	public RingState state {
 		get { return _state; }
 		set
@@ -18,11 +19,11 @@ public class Ring : MonoBehaviour
 			_state = value;
 			if (value == RingState.Idle)
 			{
-				transform.localScale = new Vector3(2f, 2f, 2f);
+				highLightObj.SetActive(false);
 			}
 			else
 			{
-				transform.localScale = new Vector3(2.2f, 2.2f, 2.2f);
+				highLightObj.SetActive(true);
 			}
 		}
 	}
