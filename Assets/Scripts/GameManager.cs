@@ -93,6 +93,7 @@ public class GameManager : MonoBehaviour
 					currentPlayer = currentPlayer == player1 ? player2 : player1;
 					cell.ring.state = RingState.Idle;
 					lastClicked = null;
+					mapManager.DisableAllButtons();
 					break;
 				}
 				else if (cell.isRingState)
@@ -101,10 +102,14 @@ public class GameManager : MonoBehaviour
 					{
 						lastClicked.ring.state = RingState.Idle;
 						lastClicked = null;
+						mapManager.DisableAllButtons();
 						break;
 					}
 					if (lastClicked != null && lastClicked.isRingState && lastClicked.ring.isSelected)
+					{
 						lastClicked.ring.state = RingState.Idle;
+						mapManager.DisableAllButtons();
+					}
 
 					cell.ring.state = RingState.Selected;
 				}

@@ -94,7 +94,7 @@ public class MapManager : MonoBehaviour
 				ButtonCell target = GetButtonCell(x, y);
 				if (target.isEmptyState)
 				{
-					target.EnableButton();
+					target.ActivateButton();
 					if (isStoneAppeared) break;
 				}
 				else if (target.isStoneState)

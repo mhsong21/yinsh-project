@@ -27378,6 +27378,7 @@ MonoBehaviour:
   stone: {fileID: 1723571230213322}
   _x: 8
   _y: 3
+  _white: 0
 --- !u!114 &114034363408751568
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27394,6 +27395,7 @@ MonoBehaviour:
   stone: {fileID: 1794231747389094}
   _x: 4
   _y: 9
+  _white: 0
 --- !u!114 &114041725362989508
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27410,6 +27412,7 @@ MonoBehaviour:
   stone: {fileID: 1480396000970776}
   _x: 5
   _y: 9
+  _white: 0
 --- !u!114 &114055390796637242
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27426,6 +27429,7 @@ MonoBehaviour:
   stone: {fileID: 1231799554435852}
   _x: 3
   _y: 6
+  _white: 0
 --- !u!114 &114062462388490962
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27442,6 +27446,7 @@ MonoBehaviour:
   stone: {fileID: 1950990192498622}
   _x: 10
   _y: 7
+  _white: 0
 --- !u!114 &114063386488768226
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27458,6 +27463,7 @@ MonoBehaviour:
   stone: {fileID: 1738340931527546}
   _x: 1
   _y: 6
+  _white: 0
 --- !u!114 &114082406451023044
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27474,6 +27480,7 @@ MonoBehaviour:
   stone: {fileID: 1101172196628594}
   _x: 9
   _y: 9
+  _white: 0
 --- !u!114 &114088896059804272
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27490,6 +27497,7 @@ MonoBehaviour:
   stone: {fileID: 1429129703684138}
   _x: 9
   _y: 8
+  _white: 0
 --- !u!114 &114090589863347902
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27506,6 +27514,7 @@ MonoBehaviour:
   stone: {fileID: 1344803830857590}
   _x: 2
   _y: 5
+  _white: 0
 --- !u!114 &114101073217549688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27522,6 +27531,7 @@ MonoBehaviour:
   stone: {fileID: 1251598873120814}
   _x: 9
   _y: 6
+  _white: 0
 --- !u!114 &114104572358000106
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27538,6 +27548,7 @@ MonoBehaviour:
   stone: {fileID: 1105761071863684}
   _x: 4
   _y: 6
+  _white: 0
 --- !u!114 &114107138975911900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27554,6 +27565,7 @@ MonoBehaviour:
   stone: {fileID: 1744629299355740}
   _x: 5
   _y: 3
+  _white: 0
 --- !u!114 &114113299872856676
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27570,6 +27582,7 @@ MonoBehaviour:
   stone: {fileID: 1401859943083558}
   _x: 8
   _y: 5
+  _white: 0
 --- !u!114 &114127331683907660
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27586,6 +27599,7 @@ MonoBehaviour:
   stone: {fileID: 1897898373645040}
   _x: 1
   _y: 1
+  _white: 0
 --- !u!114 &114141828505227798
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27602,6 +27616,7 @@ MonoBehaviour:
   stone: {fileID: 1515580635756080}
   _x: 1
   _y: 3
+  _white: 0
 --- !u!114 &114146099099384818
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27618,6 +27633,7 @@ MonoBehaviour:
   stone: {fileID: 1922057655094338}
   _x: 3
   _y: 7
+  _white: 0
 --- !u!114 &114150365435850016
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27634,6 +27650,7 @@ MonoBehaviour:
   stone: {fileID: 1624092723146566}
   _x: 0
   _y: 2
+  _white: 0
 --- !u!114 &114168715949224626
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27650,6 +27667,7 @@ MonoBehaviour:
   stone: {fileID: 1889292079937318}
   _x: 2
   _y: 7
+  _white: 0
 --- !u!114 &114177814131438770
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27666,6 +27684,7 @@ MonoBehaviour:
   stone: {fileID: 1192676853694040}
   _x: 3
   _y: 1
+  _white: 0
 --- !u!114 &114179936981859502
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27682,6 +27701,7 @@ MonoBehaviour:
   stone: {fileID: 1682363269508652}
   _x: 3
   _y: 0
+  _white: 0
 --- !u!114 &114188968861704842
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27698,6 +27718,7 @@ MonoBehaviour:
   stone: {fileID: 1080397627185662}
   _x: 6
   _y: 5
+  _white: 0
 --- !u!114 &114199645020879376
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27714,6 +27735,7 @@ MonoBehaviour:
   stone: {fileID: 1484456763238546}
   _x: 6
   _y: 8
+  _white: 0
 --- !u!114 &114200661277909780
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27822,7 +27844,7 @@ MonoBehaviour:
     - {fileID: 1928538192142632}
     - {fileID: 1408454933185240}
     - {fileID: 1792662136130582}
-  ringLocalPosition: {x: 0, y: 0.1, z: 0}
+  ringLocalPosition: {x: 0, y: 0.4, z: 0}
   ringLocalScale: {x: 2, y: 2, z: 2}
 --- !u!114 &114218753416657808
 MonoBehaviour:
@@ -27840,6 +27862,7 @@ MonoBehaviour:
   stone: {fileID: 1850143179247622}
   _x: 7
   _y: 4
+  _white: 0
 --- !u!114 &114222913115844252
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27856,6 +27879,7 @@ MonoBehaviour:
   stone: {fileID: 1003635797803800}
   _x: 6
   _y: 1
+  _white: 0
 --- !u!114 &114224468656034802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27872,6 +27896,7 @@ MonoBehaviour:
   stone: {fileID: 1597118639340422}
   _x: 1
   _y: 5
+  _white: 0
 --- !u!114 &114235236231304250
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27888,6 +27913,7 @@ MonoBehaviour:
   stone: {fileID: 1543273742752066}
   _x: 0
   _y: 1
+  _white: 0
 --- !u!114 &114241564998901640
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27904,6 +27930,7 @@ MonoBehaviour:
   stone: {fileID: 1633974559316390}
   _x: 5
   _y: 7
+  _white: 0
 --- !u!114 &114264425163939130
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27920,6 +27947,7 @@ MonoBehaviour:
   stone: {fileID: 1852369775681288}
   _x: 10
   _y: 8
+  _white: 0
 --- !u!114 &114264814220001982
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27936,6 +27964,7 @@ MonoBehaviour:
   stone: {fileID: 1448252657885694}
   _x: 7
   _y: 7
+  _white: 0
 --- !u!114 &114269204097311738
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27952,6 +27981,7 @@ MonoBehaviour:
   stone: {fileID: 1833312851362096}
   _x: 10
   _y: 9
+  _white: 0
 --- !u!114 &114297965937387976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27968,6 +27998,7 @@ MonoBehaviour:
   stone: {fileID: 1592609035730596}
   _x: 3
   _y: 4
+  _white: 0
 --- !u!114 &114318936340349382
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27984,6 +28015,7 @@ MonoBehaviour:
   stone: {fileID: 1624524966946934}
   _x: 3
   _y: 5
+  _white: 0
 --- !u!114 &114350616919170792
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28000,6 +28032,7 @@ MonoBehaviour:
   stone: {fileID: 1994773376040754}
   _x: 5
   _y: 6
+  _white: 0
 --- !u!114 &114363606763507650
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28016,6 +28049,7 @@ MonoBehaviour:
   stone: {fileID: 1676998950876218}
   _x: 7
   _y: 5
+  _white: 0
 --- !u!114 &114403064747254190
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28032,6 +28066,7 @@ MonoBehaviour:
   stone: {fileID: 1489436830750442}
   _x: 3
   _y: 3
+  _white: 0
 --- !u!114 &114422041396566306
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28048,6 +28083,7 @@ MonoBehaviour:
   stone: {fileID: 1407752709160618}
   _x: 4
   _y: 5
+  _white: 0
 --- !u!114 &114422727995170438
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28064,6 +28100,7 @@ MonoBehaviour:
   stone: {fileID: 1453318493818596}
   _x: 4
   _y: 2
+  _white: 0
 --- !u!114 &114435764987987552
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28080,6 +28117,7 @@ MonoBehaviour:
   stone: {fileID: 1516321043756962}
   _x: 8
   _y: 10
+  _white: 0
 --- !u!114 &114436909341155546
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28096,6 +28134,7 @@ MonoBehaviour:
   stone: {fileID: 1919419453896116}
   _x: 9
   _y: 5
+  _white: 0
 --- !u!114 &114452700013174692
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28112,6 +28151,7 @@ MonoBehaviour:
   stone: {fileID: 1724442668893362}
   _x: 6
   _y: 7
+  _white: 0
 --- !u!114 &114454538272986832
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28128,6 +28168,7 @@ MonoBehaviour:
   stone: {fileID: 1854623728287458}
   _x: 0
   _y: 4
+  _white: 0
 --- !u!114 &114454847858913346
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28144,6 +28185,7 @@ MonoBehaviour:
   stone: {fileID: 1009704662735938}
   _x: 5
   _y: 1
+  _white: 0
 --- !u!114 &114461336812085720
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28160,6 +28202,7 @@ MonoBehaviour:
   stone: {fileID: 1417124128107596}
   _x: 2
   _y: 6
+  _white: 0
 --- !u!114 &114476192486247538
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28176,6 +28219,7 @@ MonoBehaviour:
   stone: {fileID: 1204582106306684}
   _x: 6
   _y: 10
+  _white: 0
 --- !u!114 &114496736856503436
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28192,6 +28236,7 @@ MonoBehaviour:
   stone: {fileID: 1643980953144052}
   _x: 5
   _y: 8
+  _white: 0
 --- !u!114 &114498442941728048
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28208,6 +28253,7 @@ MonoBehaviour:
   stone: {fileID: 1515926831504576}
   _x: 7
   _y: 8
+  _white: 0
 --- !u!114 &114517642909405736
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28224,6 +28270,7 @@ MonoBehaviour:
   stone: {fileID: 1521848206328888}
   _x: 1
   _y: 2
+  _white: 0
 --- !u!114 &114538742033237076
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28240,6 +28287,7 @@ MonoBehaviour:
   stone: {fileID: 1590871415305478}
   _x: 4
   _y: 0
+  _white: 0
 --- !u!114 &114557962147467912
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28256,6 +28304,7 @@ MonoBehaviour:
   stone: {fileID: 1523566796209492}
   _x: 4
   _y: 7
+  _white: 0
 --- !u!114 &114602385355670678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28272,6 +28321,7 @@ MonoBehaviour:
   stone: {fileID: 1103881426035206}
   _x: 4
   _y: 3
+  _white: 0
 --- !u!114 &114603866485811758
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28288,6 +28338,7 @@ MonoBehaviour:
   stone: {fileID: 1847433064331174}
   _x: 3
   _y: 2
+  _white: 0
 --- !u!114 &114606869660834062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28304,6 +28355,7 @@ MonoBehaviour:
   stone: {fileID: 1901769266238708}
   _x: 1
   _y: 4
+  _white: 0
 --- !u!114 &114621651703923288
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28320,6 +28372,7 @@ MonoBehaviour:
   stone: {fileID: 1533931190694158}
   _x: 5
   _y: 5
+  _white: 0
 --- !u!114 &114625709868410258
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28336,6 +28389,7 @@ MonoBehaviour:
   stone: {fileID: 1547789847196636}
   _x: 6
   _y: 6
+  _white: 0
 --- !u!114 &114627792017350798
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28352,6 +28406,7 @@ MonoBehaviour:
   stone: {fileID: 1896176658744754}
   _x: 10
   _y: 6
+  _white: 0
 --- !u!114 &114637981908900794
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28368,6 +28423,7 @@ MonoBehaviour:
   stone: {fileID: 1278422535278640}
   _x: 2
   _y: 2
+  _white: 0
 --- !u!114 &114644090225896434
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28384,6 +28440,7 @@ MonoBehaviour:
   stone: {fileID: 1903455133459656}
   _x: 6
   _y: 3
+  _white: 0
 --- !u!114 &114655687587160242
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28400,6 +28457,7 @@ MonoBehaviour:
   stone: {fileID: 1026006164280956}
   _x: 7
   _y: 2
+  _white: 0
 --- !u!114 &114695499955590510
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28416,6 +28474,7 @@ MonoBehaviour:
   stone: {fileID: 1858073603861470}
   _x: 8
   _y: 8
+  _white: 0
 --- !u!114 &114706195741764732
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28432,6 +28491,7 @@ MonoBehaviour:
   stone: {fileID: 1214818871302380}
   _x: 7
   _y: 10
+  _white: 0
 --- !u!114 &114707644792086396
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28448,6 +28508,7 @@ MonoBehaviour:
   stone: {fileID: 1334657095015158}
   _x: 7
   _y: 9
+  _white: 0
 --- !u!114 &114716070740538554
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28464,6 +28525,7 @@ MonoBehaviour:
   stone: {fileID: 1524691264984684}
   _x: 1
   _y: 0
+  _white: 0
 --- !u!114 &114743294378244902
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28480,6 +28542,7 @@ MonoBehaviour:
   stone: {fileID: 1741509437113162}
   _x: 8
   _y: 6
+  _white: 0
 --- !u!114 &114753793485841234
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28496,6 +28559,7 @@ MonoBehaviour:
   stone: {fileID: 1449312549206172}
   _x: 6
   _y: 2
+  _white: 0
 --- !u!114 &114775747962097074
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28512,6 +28576,7 @@ MonoBehaviour:
   stone: {fileID: 1366265652695434}
   _x: 2
   _y: 1
+  _white: 0
 --- !u!114 &114798981406326960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28528,6 +28593,7 @@ MonoBehaviour:
   stone: {fileID: 1797672473894362}
   _x: 6
   _y: 9
+  _white: 0
 --- !u!114 &114799565460958946
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28544,6 +28610,7 @@ MonoBehaviour:
   stone: {fileID: 1504696292304770}
   _x: 4
   _y: 1
+  _white: 0
 --- !u!114 &114830200230374016
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28560,6 +28627,7 @@ MonoBehaviour:
   stone: {fileID: 1984441716239134}
   _x: 3
   _y: 8
+  _white: 0
 --- !u!114 &114841391654547030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28576,6 +28644,7 @@ MonoBehaviour:
   stone: {fileID: 1758966743990946}
   _x: 7
   _y: 6
+  _white: 0
 --- !u!114 &114876563278056492
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28592,6 +28661,7 @@ MonoBehaviour:
   stone: {fileID: 1066609044576414}
   _x: 4
   _y: 8
+  _white: 0
 --- !u!114 &114879753822604676
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28608,6 +28678,7 @@ MonoBehaviour:
   stone: {fileID: 1119694064627462}
   _x: 5
   _y: 2
+  _white: 0
 --- !u!114 &114880805025821750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28624,6 +28695,7 @@ MonoBehaviour:
   stone: {fileID: 1134200001733334}
   _x: 8
   _y: 9
+  _white: 0
 --- !u!114 &114888141849217014
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28640,6 +28712,7 @@ MonoBehaviour:
   stone: {fileID: 1780329975009456}
   _x: 5
   _y: 4
+  _white: 0
 --- !u!114 &114904026568823046
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28656,6 +28729,7 @@ MonoBehaviour:
   stone: {fileID: 1496970606307064}
   _x: 0
   _y: 3
+  _white: 0
 --- !u!114 &114904405914291286
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28672,6 +28746,7 @@ MonoBehaviour:
   stone: {fileID: 1876155988779154}
   _x: 9
   _y: 10
+  _white: 0
 --- !u!114 &114913383249670632
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28688,6 +28763,7 @@ MonoBehaviour:
   stone: {fileID: 1431187756080774}
   _x: 2
   _y: 4
+  _white: 0
 --- !u!114 &114922296145242070
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28704,6 +28780,7 @@ MonoBehaviour:
   stone: {fileID: 1948450406176588}
   _x: 8
   _y: 4
+  _white: 0
 --- !u!114 &114945019996119204
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28720,6 +28797,7 @@ MonoBehaviour:
   stone: {fileID: 1067221691679984}
   _x: 8
   _y: 7
+  _white: 0
 --- !u!114 &114946554037204678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28736,6 +28814,7 @@ MonoBehaviour:
   stone: {fileID: 1954303289161334}
   _x: 4
   _y: 4
+  _white: 0
 --- !u!114 &114951842555526268
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28752,6 +28831,7 @@ MonoBehaviour:
   stone: {fileID: 1914248490864736}
   _x: 9
   _y: 7
+  _white: 0
 --- !u!114 &114967382020612474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28768,6 +28848,7 @@ MonoBehaviour:
   stone: {fileID: 1011147763550542}
   _x: 2
   _y: 3
+  _white: 0
 --- !u!114 &114969697209333228
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28784,6 +28865,7 @@ MonoBehaviour:
   stone: {fileID: 1907301026006350}
   _x: 9
   _y: 4
+  _white: 0
 --- !u!114 &114985253417594918
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28800,6 +28882,7 @@ MonoBehaviour:
   stone: {fileID: 1866862319787950}
   _x: 6
   _y: 4
+  _white: 0
 --- !u!114 &114988480454590354
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28816,6 +28899,7 @@ MonoBehaviour:
   stone: {fileID: 1381597109918192}
   _x: 2
   _y: 0
+  _white: 0
 --- !u!114 &114991749572222062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28832,6 +28916,7 @@ MonoBehaviour:
   stone: {fileID: 1602408171568478}
   _x: 7
   _y: 3
+  _white: 0
 --- !u!135 &135020794428253024
 SphereCollider:
   m_ObjectHideFlags: 1

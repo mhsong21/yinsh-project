@@ -95,11 +95,17 @@ public class ButtonCell : MonoBehaviour
 	public void EnableButton()
 	{
 //		Debug.Log(_x + ", " + _y + " is enabled");
+		// ringTrans.SetActive(true);
 	}
 
 	public void DisableButton()
 	{
+		ringTrans.SetActive(false);
+	}
 
+	public void ActivateButton()
+	{
+		ringTrans.SetActive(true);
 	}
 
 	public void FlipStone()
