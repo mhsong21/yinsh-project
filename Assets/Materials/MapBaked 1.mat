@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Map
+  m_Name: MapBaked 1
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _NORMALMAP
   m_LightmapFlags: 4
@@ -59,8 +59,8 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _GlossMapScale: 0.5
-    - _Glossiness: 0.406
+    - _GlossMapScale: 1
+    - _Glossiness: 0.61
     - _GlossyReflections: 1
     - _Metallic: 1
     - _Mode: 0
@@ -72,5 +72,5 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.21323532, g: 0.21323532, b: 0.21323532, a: 1}
+    - _Color: {r: 0.13235295, g: 0.12554066, b: 0.12554066, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
