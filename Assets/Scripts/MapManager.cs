@@ -69,6 +69,7 @@ public class MapManager : MonoBehaviour
 		Ring ring = prev.ring;
 		prev.ring = null;
 		prev.isWhite = isWhite;
+		StartCoroutine("test");
 		prev.state = ButtonState.Stone;
 		next.ring = ring;
 		next.state = ButtonState.Ring;
@@ -79,6 +80,11 @@ public class MapManager : MonoBehaviour
 
 		// Flip
 		FlipStones(prev, next);
+	}
+
+	IEnumerator test()
+	{
+		yield return null;
 	}
 
 	public void ActivatePossibleButtons(ButtonCell cell)

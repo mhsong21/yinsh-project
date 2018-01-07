@@ -13,9 +13,13 @@ public class Player: MonoBehaviour
 		}
 	}
 
-	public void ActiveRings() 
+	public void EnableRingCells() 
 	{
-		
+		foreach (var ring in rings)
+		{
+			var button = ring.GetComponentInParent<ButtonCell>();
+			button.EnableButton();
+		}
 	}
 
 	public void AddRing(Ring ring)

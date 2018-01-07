@@ -70,8 +70,14 @@ public class ButtonCell : MonoBehaviour
 	[SerializeField] private int _x;
 	[SerializeField] private int _y;
 	[SerializeField] private bool _white = false;
-
+	private Collider m_Collider;
 	private bool onDown = false;
+
+
+	public void Start()
+	{
+		m_Collider = GetComponent<Collider>();
+	}
 
 	public void OnMouseDown()
 	{
@@ -94,17 +100,18 @@ public class ButtonCell : MonoBehaviour
 
 	public void EnableButton()
 	{
-//		Debug.Log(_x + ", " + _y + " is enabled");
-		// ringTrans.SetActive(true);
+		m_Collider.enabled = true;
 	}
 
 	public void DisableButton()
 	{
+		m_Collider.enabled = false;
 		ringTrans.SetActive(false);
 	}
 
 	public void ActivateButton()
 	{
+		m_Collider.enabled = true;
 		ringTrans.SetActive(true);
 	}
 
@@ -114,18 +121,4 @@ public class ButtonCell : MonoBehaviour
 		animator.SetTrigger(STONE_FLIP);
 	}
 
-//	public void OnMouseEnter()
-//	{
-//		ringTrans.SetActive(true);
-//	}
-//
-//	public void OnMouseExit()
-//	{
-//		ringTrans.SetActive(false);
-//	}
-
-//	public void Update()
-//	{
-//		ringTrans.SetActive(isSelectedState);
-//	}
 }

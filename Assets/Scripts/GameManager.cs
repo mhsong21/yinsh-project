@@ -72,6 +72,7 @@ public class GameManager : MonoBehaviour
 					{
 						state = GameState.ProcessState;
 						lastClicked = null;
+						break;
 					}
 				}
 				else
@@ -102,25 +103,23 @@ public class GameManager : MonoBehaviour
 					{
 						lastClicked.ring.state = RingState.Idle;
 						lastClicked = null;
-						mapManager.DisableAllButtons();
+//						mapManager.DisableAllButtons();
 						break;
 					}
 					if (lastClicked != null && lastClicked.isRingState && lastClicked.ring.isSelected)
 					{
 						lastClicked.ring.state = RingState.Idle;
-						mapManager.DisableAllButtons();
+//						mapManager.DisableAllButtons();
 					}
 
 					cell.ring.state = RingState.Selected;
 				}
 				lastClicked = cell;
-
-				if (cell.isRingState)
-					mapManager.ActivatePossibleButtons(cell);
 				break;
 		}
 
 		SetupStatusText();
+		SetupMap(lastClicked);
 	}
 
 	private void SetupStatusText()
@@ -129,5 +128,20 @@ public class GameManager : MonoBehaviour
 		string playerState = (currentPlayer == player1) ? "Player1 Turn" : "Player2 Turn";
 
 		statusText.text = gameState + "\n" + playerState;
+	}
+
+	private void SetupMap(ButtonCell cell)
+	{
+		switch (state)
+		{
+			case GameState.SetupState:
+				break;
+			case GameState.ProcessState:
+				mapManager.DisableAllButtons();
+				currentPlayer.EnableRingCells();
+				if (cell != null && cell.isRingState)
+					mapManager.ActivatePossibleButtons(cell);
+				break;
+		}
 	}
 }
