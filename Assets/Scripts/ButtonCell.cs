@@ -74,7 +74,7 @@ public class ButtonCell : MonoBehaviour
 	private bool onDown = false;
 
 
-	public void Start()
+	public void Awake()
 	{
 		m_Collider = GetComponent<Collider>();
 	}
