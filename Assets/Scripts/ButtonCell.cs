@@ -16,6 +16,7 @@ public class ButtonCell : MonoBehaviour
 	public Animator animator;
 	public GameObject ringTrans;
 	public GameObject stone;
+	public GameObject stoneHighlight;
 	private readonly string IS_WHITE = "IsWhite";
 	private readonly string STONE_ACTIVE = "Stone Active";
 	private readonly string STONE_FLIP = "Stone Flip";
