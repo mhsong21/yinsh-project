@@ -18,14 +18,24 @@ public class FiveStoneManager : MonoBehaviour
         isActive = true;
         stoneIndex = 0;
         fiveStoneList = availableFiveStone;
-        prevButton.SetActive(true);
-        nextButton.SetActive(true);
-        confirmButton.SetActive(true);
+        
         ActiveFiveStone(true);
         if (fiveStoneList.Count == 1)
         {
-            RemoveFiveStone();
+            StartCoroutine("Wait");
         }
+        else
+        {
+            prevButton.SetActive(true);
+            nextButton.SetActive(true);
+            confirmButton.SetActive(true);
+        }
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(2);
+        RemoveFiveStone();
     }
 
     public void RemoveFiveStone()
