@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
 	public Player player1;
 	public Player player2;
 	public Text statusText;
+	public GameObject Win;
 
 	private GameState state = GameState.SetupState;
 	private Player currentPlayer;
@@ -178,6 +179,7 @@ public class GameManager : MonoBehaviour
 				gameState = "Pick Ring State";
 				break;
 			case GameState.EndState:
+				Win.SetActive(true);
 				gameState = "End State";
 				break;
 		}
