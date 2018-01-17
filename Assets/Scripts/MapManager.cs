@@ -134,7 +134,7 @@ public class MapManager : MonoBehaviour
 	public List<List<ButtonCell>> checkFiveStones()
 	{
 		List<List<ButtonCell>> fiveStoneList = new List<List<ButtonCell>>();
-		for (int p = 0; p < spotTable.Count / 2; p++)
+		for (int p = 0; p < spotTable.Count; p++)
 		{
 			for (int q = 0; q < spotTable[p].rawData.Count; q++)
 			{
@@ -142,7 +142,7 @@ public class MapManager : MonoBehaviour
 				if (!cell.isStoneState)
 					continue;
 
-				for (int i = 0; i < delta.GetLength(0); i++)
+				for (int i = 0; i < delta.GetLength(0) / 2; i++)
 				{
 					int dx = delta[i, 0];
 					int dy = delta[i, 1];
