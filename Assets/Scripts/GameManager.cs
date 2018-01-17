@@ -7,6 +7,7 @@ public enum GameState
 {
 	SetupState,
 	ProcessState,
+	PickStoneState,
 	PickRingState,
 	EndState
 };
@@ -82,7 +83,7 @@ public class GameManager : MonoBehaviour
 				if (cell.isEmptyState && lastClicked != null && lastClicked.isRingState)
 				{
 					mapManager.MoveRingToCell(lastClicked, cell, (currentPlayer == player1));
-					currentPlayer = GetNextPlayer();
+
 					cell.ring.state = RingState.Idle;
 					lastClicked = null;
 					mapManager.DisableAllButtons();
@@ -90,7 +91,7 @@ public class GameManager : MonoBehaviour
 					fiveStoneList = mapManager.checkFiveStones();
 					if (fiveStoneList.Count > 0)
 					{
-						if (currentPlayer.ringCount == 1)
+						if (currentPlayer.ringCount == 3)
 						{
 							state = GameState.EndState;
 							break;
@@ -98,9 +99,9 @@ public class GameManager : MonoBehaviour
 						// Do Button Select
 						fiveStoneManager.LoadSelect(fiveStoneList);
 
-						// And Then Pick Ring
-						state = GameState.PickRingState;
-					}
+						// And Then Set Stone State
+						state = GameState.PickStoneState;
+					}else currentPlayer = GetNextPlayer();
 					break;
 				}
 				else if (cell.isRingState)
@@ -130,6 +131,9 @@ public class GameManager : MonoBehaviour
 				if (lastClicked == cell)
 				{
 					currentPlayer.RemoveRing(cell.ring);
+					cell.ring.gameObject.SetActive(false);
+					cell.ring = null;
+					cell.state = ButtonState.Empty;
 					currentPlayer = GetNextPlayer();
 					lastClicked = null;
 
@@ -137,7 +141,7 @@ public class GameManager : MonoBehaviour
 				}
 				else
 				{
-					lastClicked.ring.state = RingState.Idle;
+					if (lastClicked != null) lastClicked.ring.state = RingState.Idle;
 					cell.ring.state = RingState.Selected;
 
 					lastClicked = cell;
@@ -151,9 +155,9 @@ public class GameManager : MonoBehaviour
 
 	public void ReturnToRingSelectState(int index)
 	{
-		fiveStoneList[index].ForEach(cell => {
-			cell.state = ButtonState.Empty;
-		});
+		state = GameState.PickRingState;
+		SetupStatusText();
+		SetupMap();
 	}
 
 	private void SetupStatusText()
@@ -167,6 +171,9 @@ public class GameManager : MonoBehaviour
 			case GameState.ProcessState:
 				gameState = "Process State";
 				break;
+			case GameState.PickStoneState:
+				gameState = "Pick Stone State";
+				break;
 			case GameState.PickRingState:
 				gameState = "Pick Ring State";
 				break;
@@ -179,7 +186,7 @@ public class GameManager : MonoBehaviour
 		statusText.text = gameState + "\n" + playerState;
 	}
 
-	private void SetupMap(ButtonCell cell)
+	private void SetupMap(ButtonCell cell = null)
 	{
 		switch (state)
 		{
@@ -190,6 +197,13 @@ public class GameManager : MonoBehaviour
 				currentPlayer.EnableRingCells();
 				if (cell != null && cell.isRingState)
 					mapManager.ActivatePossibleButtons(cell);
+				break;
+			case GameState.PickStoneState:
+				mapManager.DisableAllButtons();
+				break;
+			case GameState.PickRingState:
+				mapManager.DisableAllButtons();
+				currentPlayer.EnableRingCells();
 				break;
 		}
 	}

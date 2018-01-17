@@ -7,8 +7,7 @@ public class Player: MonoBehaviour
 	public List<GameObject> rings;
 	public int ringCount 
 	{
-		get 
-		{
+		get {
 			return rings.Count;
 		}
 	}
@@ -30,7 +29,7 @@ public class Player: MonoBehaviour
 	public void RemoveRing(Ring ring)
 	{
 		rings.ForEach(r => {
-			if (r == ring) rings.Remove(r);		
+			if (r == ring.gameObject) rings.Remove(r);
 		});
 	}
 }
