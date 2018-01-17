@@ -39,7 +39,7 @@ public class FiveStoneManager : MonoBehaviour
         prevButton.SetActive(false);
         nextButton.SetActive(false);
         confirmButton.SetActive(false);
-        // GameManager.Instance.ReturnToRingSelectState(stoneIndex);
+        GameManager.Instance.ReturnToRingSelectState(stoneIndex);
     }
 
     public void ActiveFiveStone(bool isActive)

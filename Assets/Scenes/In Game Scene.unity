@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43668893, g: 0.4842832, b: 0.56452656, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -229,6 +229,11 @@ Transform:
   m_Father: {fileID: 1424408698}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &604866274 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4921316429292474, guid: 232f86888939a437b98ec5c4155a458a,
+    type: 2}
+  m_PrefabInternal: {fileID: 937903744}
 --- !u!1001 &808211935
 Prefab:
   m_ObjectHideFlags: 0
@@ -405,6 +410,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114113299872856676, guid: 232f86888939a437b98ec5c4155a458a,
+        type: 2}
+      propertyPath: stoneHighlight
+      value: 
+      objectReference: {fileID: 1081605506}
+    - target: {fileID: 4415844488053386, guid: 232f86888939a437b98ec5c4155a458a, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4824287350792612, guid: 232f86888939a437b98ec5c4155a458a, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 232f86888939a437b98ec5c4155a458a, type: 2}
   m_IsPrefabParent: 0
@@ -550,6 +568,84 @@ MonoBehaviour:
   animationTime: 0.5
   basePos: {x: 20, y: 12, z: 0}
   playPos: {x: 0, y: 12, z: 0}
+--- !u!1 &1075188394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1838483278578980, guid: 232f86888939a437b98ec5c4155a458a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1075188395}
+  - component: {fileID: 1075188397}
+  - component: {fileID: 1075188396}
+  m_Layer: 0
+  m_Name: highlight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1075188395
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4200474704919796, guid: 232f86888939a437b98ec5c4155a458a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1075188394}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -2.6374998, y: 1.35, z: -0}
+  m_LocalScale: {x: 1.1000011, y: 0.7000006, z: 1.1}
+  m_Children: []
+  m_Father: {fileID: 604866274}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1075188396
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 23279083589578152, guid: 232f86888939a437b98ec5c4155a458a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1075188394}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 189a6e08e7bd0d844801c9573e040832, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1075188397
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 33127453549783142, guid: 232f86888939a437b98ec5c4155a458a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1075188394}
+  m_Mesh: {fileID: 4300000, guid: b2bd1cbfe9256894a9e854e1df0b674e, type: 3}
+--- !u!1 &1081605506 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1785151665541482, guid: 232f86888939a437b98ec5c4155a458a,
+    type: 2}
+  m_PrefabInternal: {fileID: 937903744}
 --- !u!1 &1084646202
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,6 +784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 498190a6ba9044e80834519acb2d2ae7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fiveStoneManager: {fileID: 1279086261}
   objectPool: {fileID: 1084646204}
   mapManager: {fileID: 1716440978}
   player1: {fileID: 1345898740}

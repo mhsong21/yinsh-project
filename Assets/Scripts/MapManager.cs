@@ -10,7 +10,7 @@ public class MapManager : MonoBehaviour
 	public Vector3 ringLocalScale = new Vector3(2f, 2f, 2f);
 
 	private List<int> bottomOffsetList = new List<int>(){ 1, 0, 0, 0, 0, 1, 1, 2, 3, 4, 6 };
-	private int[,] delta = new int[,]{ { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 }, { 1, 1 }, { -1, -1 } };
+	private int[,] delta = new int[,]{ { 1, 0 }, { 1, 1 }, { 0, 1 }, { -1, 0 } , { -1, -1 }, { 0, -1 } };
 
 	public void EnableAllButtons()
 	{
@@ -50,7 +50,8 @@ public class MapManager : MonoBehaviour
 
 	public ButtonCell GetButtonCell(int x, int y)
 	{
-		return GetButtonObject(x, y).GetComponent<ButtonCell>();
+		if (GetButtonObject(x, y) != null) return GetButtonObject(x, y).GetComponent<ButtonCell>();
+		return null;
 	}
 
 	public void AddRingToCell(Ring ring, ButtonCell cell)
@@ -58,8 +59,6 @@ public class MapManager : MonoBehaviour
 		ring.transform.parent = cell.transform;
 		ring.transform.localPosition = ringLocalPosition;
 		ring.transform.localScale = ringLocalScale;
-//		ring.x = cell.X;
-//		ring.y = cell.y;
 
 		cell.GetComponent<ButtonCell>().ring = ring;
 	}
@@ -69,7 +68,6 @@ public class MapManager : MonoBehaviour
 		Ring ring = prev.ring;
 		prev.ring = null;
 		prev.isWhite = isWhite;
-		StartCoroutine("test");
 		prev.state = ButtonState.Stone;
 		next.ring = ring;
 		next.state = ButtonState.Ring;
@@ -80,11 +78,6 @@ public class MapManager : MonoBehaviour
 
 		// Flip
 		FlipStones(prev, next);
-	}
-
-	IEnumerator test()
-	{
-		yield return null;
 	}
 
 	public void ActivatePossibleButtons(ButtonCell cell)
@@ -138,13 +131,14 @@ public class MapManager : MonoBehaviour
 		}
 	}
 
-	public bool checkFiveStones()
+	public List<List<ButtonCell>> checkFiveStones()
 	{
-		for (int p = 0; p < spotTable.Count; p++)
+		List<List<ButtonCell>> fiveStoneList = new List<List<ButtonCell>>();
+		for (int p = 0; p < spotTable.Count / 2; p++)
 		{
 			for (int q = 0; q < spotTable[p].rawData.Count; q++)
 			{
-				ButtonCell cell = GetButtonCell(p, q);
+				ButtonCell cell = spotTable[p][q].GetComponent<ButtonCell>();
 				if (!cell.isStoneState)
 					continue;
 
@@ -154,21 +148,37 @@ public class MapManager : MonoBehaviour
 					int dy = delta[i, 1];
 					int count = 0;
 
-					for (int x = cell.x + dx, y = cell.y + dy; GetButtonObject(x, y) != null && count < 5; x += dx, y += dy)
+					List<ButtonCell> fiveStone = new List<ButtonCell>();
+					for (int x = cell.x, y = cell.y; count < 5; x += dx, y += dy)
 					{
 						ButtonCell target = GetButtonCell(x, y);
-						if (!target.isStoneState)
+						if (target == null || !target.isStoneState)
 							break;
 
 						// if same color
-						count ++;
+						if (cell.isWhite == target.isWhite)
+						{
+							count++;
+							fiveStone.Add(target);
+						}
+						else
+							break;
 					}
 
 					if (count == 5)
-						return true;
+						fiveStoneList.Add(fiveStone);
 				}
 			}
 		}
-		return false;
+		return fiveStoneList;
+	}
+
+	public void RemoveRing(ButtonCell cell)
+	{
+		Ring ring = cell.ring;
+
+		// move to selected position
+		ring.gameObject.SetActive(false);
+		cell.ring = null;
 	}
 }

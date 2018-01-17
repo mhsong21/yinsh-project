@@ -60,7 +60,17 @@ public class ButtonCell : MonoBehaviour
 	public bool isStoneState { get { return _state == ButtonState.Stone; } }
 	public bool isEmptyState { get { return _state == ButtonState.Empty; } }
 
-	public Ring ring { get { return _ring; } set { _ring = value; } }
+	public Ring ring { 
+		get { return _ring; }
+		set
+		{
+			_ring = value;
+			if (value == null)
+				state = ButtonState.Empty;
+			else
+				state = ButtonState.Ring;
+		}
+	}
 	public int x { get { return _x; } set { _x = value; } }
 	public int y { get { return _y; } set { _y = value; } }
 	public int z { get { return _y - _x + 5; } }
@@ -78,6 +88,7 @@ public class ButtonCell : MonoBehaviour
 	public void Awake()
 	{
 		m_Collider = GetComponent<Collider>();
+		stoneHighlight = stone.transform.GetChild(1).gameObject;
 	}
 
 	public void OnMouseDown()

@@ -27,4 +27,10 @@ public class Player: MonoBehaviour
 		rings.Add (ring.gameObject);
 	}
 
+	public void RemoveRing(Ring ring)
+	{
+		rings.ForEach(r => {
+			if (r == ring) rings.Remove(r);		
+		});
+	}
 }
