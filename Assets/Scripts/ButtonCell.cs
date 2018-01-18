@@ -127,9 +127,13 @@ public class ButtonCell : MonoBehaviour
 		ringTrans.SetActive(true);
 	}
 
-	public void FlipStone()
+	public void FlipStone(int flipAngleIndex)
 	{
 		isWhite = !isWhite;
+		float angle = -90f + 120f * (flipAngleIndex % 3);
+		if (flipAngleIndex >= 3)
+			angle -= 180f;
+		GetComponent<Transform>().rotation = Quaternion.Euler(0, angle, 0);;
 		animator.SetTrigger(STONE_FLIP);
 	}
 

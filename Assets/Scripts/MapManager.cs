@@ -110,24 +110,42 @@ public class MapManager : MonoBehaviour
 
 	public void FlipStones(ButtonCell from, ButtonCell to)
 	{
+		int flipAngleIndex = 0;
 		int x = Math.Min(from.x, to.x);
 		int y = Math.Min(from.y, to.y);
 		int endX = Math.Max(from.x, to.x);
 		int endY = Math.Max(from.y, to.y);
 
 		int dx, dy;
-		if (from.x == to.x) { dx = 0; dy = 1; }
-		else if (from.y == to.y) { dx = 1; dy = 0; }
-		else { dx = 1; dy = 1; }
+		if (from.x == to.x)
+		{
+			dx = 0; dy = 1;
+			flipAngleIndex = 0;
+			if (from.y > to.y)
+				flipAngleIndex += 3;
+		}
+		else if (from.y == to.y)
+		{
+			dx = 1; dy = 0;
+			flipAngleIndex = 2;
+				if (from.x > to.x)
+				flipAngleIndex += 3;
+		}
+		else
+		{
+			dx = 1; dy = 1;
+			flipAngleIndex = 1;
+				if (from.x < to.x && from.y < to.y)
+				flipAngleIndex += 3;
+		}
 
 		// to ignore start & end point
 		x += dx; y += dy;
 
 		for (; x != endX || y != endY; x += dx, y += dy)
 		{
-			Debug.Log(x + " " + y + "is flipped");
 			ButtonCell target = GetButtonCell(x, y);
-			if (target.isStoneState) target.FlipStone();
+			if (target.isStoneState) target.FlipStone(flipAngleIndex);
 		}
 	}
 
